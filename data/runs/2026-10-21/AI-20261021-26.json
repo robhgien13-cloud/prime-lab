@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261021-26",
+  "date": "2026-10-21",
+  "title": "AI研究仮説 07（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "3で予想と異なる余り1が出ました。",
+  "hypothesis": "隣り合う素数の差を22で割った余りが[2, 10, 18]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "隣り合う素数の差を22で割った余りが[2, 10, 18]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "3500以下の対象を計算しました。",
+    "finding": "3で予想と異なる余り1が出ました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_divisible",
+      "limit": 3500,
+      "modulus": 22,
+      "residues": [
+        2,
+        10,
+        18
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_divisible",
+        "limit": 3500,
+        "modulus": 22,
+        "residues": [
+          2,
+          10,
+          18
+        ]
+      },
+      "statement": "隣り合う素数の差を22で割った余りが[2, 10, 18]に含まれる",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 3,
+        "observed_remainder": 1
+      },
+      "tested_cases": 1,
+      "limit": 3500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "3で予想と異なる余り1が出ました。"
+    }
+  },
+  "motivation": "貨幣価値の変動サイクルをモデル化した、素数間隔の特定剰余による割り切れやすさの動的相関の調査",
+  "inspiration": [
+    {
+      "domain": "芸術",
+      "word": "遠近法"
+    },
+    {
+      "domain": "社会",
+      "word": "貨幣"
+    },
+    {
+      "domain": "日常",
+      "word": "鏡"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

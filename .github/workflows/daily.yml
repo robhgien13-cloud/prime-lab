@@ -19,15 +19,18 @@ jobs:
           python-version: '3.12'
       - name: Test
         run: python -m unittest discover -s tests -v
-      - name: Run ten deterministic checks
-        run: python -m src.prime_lab.daily
+      - name: Generate and verify AI conjectures
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-3.5-flash-lite
+        run: python -m src.prime_lab.ai_daily
       - name: Publish
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/runs/ data/research.json
           if ! git diff --cached --quiet; then
-            git commit -m "Archive daily ten finite checks"
+            git commit -m "Archive daily AI research hypotheses"
             git pull --rebase
             git push
           fi

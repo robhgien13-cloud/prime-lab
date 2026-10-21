@@ -45,7 +45,7 @@ def run(day=None, root=Path("."), candidate=None):
     with path.open("x", encoding="utf-8") as f:
         json.dump(entry, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    refresh(day, root)
+    refresh(day, root, create_templates=False)
     return path
 
 if __name__ == "__main__":

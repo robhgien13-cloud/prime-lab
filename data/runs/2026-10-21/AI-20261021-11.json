@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261021-11",
+  "date": "2026-10-21",
+  "title": "AI研究仮説 01（未査読）",
+  "status": "有限範囲で反例なし",
+  "summary": "2000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+  "hypothesis": "10より大きいすべての素数pの余りが[1, 3, 7, 9]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "10より大きいすべての素数pの余りが[1, 3, 7, 9]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "2000以下の対象を計算しました。",
+    "finding": "2000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_last_digit",
+      "limit": 2000,
+      "modulus": 10,
+      "residues": [
+        1,
+        3,
+        7,
+        9
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_last_digit",
+        "limit": 2000,
+        "modulus": 10,
+        "residues": [
+          1,
+          3,
+          7,
+          9
+        ]
+      },
+      "statement": "10より大きいすべての素数pの余りが[1, 3, 7, 9]に含まれる",
+      "status": "有限範囲で反例なし",
+      "counterexample": null,
+      "tested_cases": 299,
+      "limit": 2000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "2000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。"
+    }
+  },
+  "motivation": "遠近法における消失点のように、無限遠へ向かう素数の十進表現における一の位の消滅と残存の傾向を観測する。",
+  "inspiration": [
+    {
+      "domain": "日常",
+      "word": "窓"
+    },
+    {
+      "domain": "芸術",
+      "word": "遠近法"
+    },
+    {
+      "domain": "技術",
+      "word": "圧縮"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

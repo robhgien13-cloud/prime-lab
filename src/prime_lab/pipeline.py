@@ -61,11 +61,12 @@ def run(day, root=Path("."), limit=1000, create_templates=True):
             if not path.exists():
                 path.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     all_records = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((root / "data" / "runs").glob("*/*.json"))]
+    all_records = [r for r in all_records if not r.get("run_id", "").startswith("T-") and not r.get("run_id", "").startswith("D-")]
     ids = [r["run_id"] for r in all_records]
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate research IDs")
     refuted = sum("反例発見" in r.get("status", "") for r in all_records)
-    hypotheses = sum(r.get("hypothesis_origin", "").startswith("事前登録") for r in all_records)
+    hypotheses = sum(r.get("provenance", {}).get("llm_used", False) for r in all_records)
     data = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "cycles": len(all_records), "hypotheses": hypotheses, "refuted": refuted, "verified": 0,

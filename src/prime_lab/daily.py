@@ -61,7 +61,7 @@ def run(day=None,root=Path(".")):
             f.write("\n")
         made+=1
         existing_specs.setdefault(json.dumps(spec,sort_keys=True),[]).append(rid)
-    rebuild(day,root)
+    rebuild(day,root,create_templates=False)
     print(f"Daily checks created: {made}; total daily checks: 10")
     return made
 

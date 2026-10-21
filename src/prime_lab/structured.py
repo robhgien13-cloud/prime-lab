@@ -13,7 +13,7 @@ def validate(spec):
     if not isinstance(spec, dict) or set(spec) != {"kind", "limit", "modulus", "residues"}:
         raise ValueError("Expected kind, limit, modulus, residues")
     kind, limit, modulus, residues = (spec[k] for k in ("kind", "limit", "modulus", "residues"))
-    if kind not in ALLOWED or type(limit) is not int or not 20 <= limit <= MAX_LIMIT:
+    if not isinstance(kind, str) or kind not in ALLOWED or type(limit) is not int or not 20 <= limit <= MAX_LIMIT:
         raise ValueError("Invalid kind or limit")
     if type(modulus) is not int or not 2 <= modulus <= 100:
         raise ValueError("Invalid modulus")

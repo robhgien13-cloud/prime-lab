@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "run_id": "T-20261021-01",
+  "date": "2026-10-21",
+  "title": "素数の予想を確かめる 01",
+  "theme_class": "C",
+  "status": "有限範囲で反例なし",
+  "summary": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+  "hypothesis": "6より大きいすべての素数pについて、pを6で割った余りが[1, 5]に含まれる",
+  "hypothesis_origin": "事前登録された試験用テンプレート（AIによる新規提案ではない）",
+  "plain_language": {
+    "question": "6より大きいすべての素数pについて、pを6で割った余りが[1, 5]に含まれるという予想は正しい？",
+    "background": "素数は1と自分自身以外で割り切れない2以上の整数です。余りは割り算で残る数です。",
+    "method": "1000以下の対象について、1つずつ余りを調べました。",
+    "finding": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+    "limits": "有限個の計算は、すべての整数についての証明にはなりません。",
+    "next_question": "なぜこの余りが現れるのか、数式で説明できるでしょうか？"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_residue",
+      "modulus": 6,
+      "residues": [
+        1,
+        5
+      ],
+      "limit": 1000
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_residue",
+        "modulus": 6,
+        "residues": [
+          1,
+          5
+        ],
+        "limit": 1000
+      },
+      "statement": "6より大きいすべての素数pについて、pを6で割った余りが[1, 5]に含まれる",
+      "status": "有限範囲で反例なし",
+      "counterexample": null,
+      "tested_cases": 165,
+      "limit": 1000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。"
+    },
+    "code": "src/prime_lab/structured.py"
+  },
+  "counterexample": null,
+  "proof": "なし",
+  "prior_art": "未照合",
+  "provenance": {
+    "generator": "deterministic test templates",
+    "llm_used": false
+  },
+  "created_at": "2026-10-21T02:26:32.763558+00:00"
+}

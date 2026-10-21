@@ -3,7 +3,7 @@ import json
 from datetime import datetime,timezone
 from pathlib import Path
 from .ai_batch import propose_batch
-from .inspiration import pick
+from .inspiration import pick_random
 from .llm_structured import experiment_candidate
 from .pipeline import run as rebuild
 
@@ -17,7 +17,7 @@ def run(day=None,root=Path("."),candidates=None):
         item=json.loads(p.read_text(encoding="utf-8"))
         spec=item.get("experiment",{}).get("spec")
         if spec: known.add(json.dumps(spec,sort_keys=True))
-    words=pick(day)
+    words=pick_random()
     batch=propose_batch(inspiration=words) if candidates is None else candidates
     made=0
     next_id=1

@@ -22,11 +22,11 @@ def parse_candidate(raw):
     if not isinstance(raw, str) or len(raw) > 20000:
         raise ValueError("Invalid response size")
     data = json.loads(raw)
-    if not isinstance(data, dict) or set(data) != {"kind","limit","modulus","residues","motivation"}:
+    if not isinstance(data, dict) or set(data) not in ({"kind","limit","modulus","residues","motivation"}, {"kind","limit","window","threshold","motivation"}):
         raise ValueError("Invalid candidate fields")
     if not isinstance(data["motivation"], str) or not 1 <= len(data["motivation"]) <= 1000:
         raise ValueError("Invalid motivation")
-    spec = {k:data[k] for k in ("kind","limit","modulus","residues")}
+    spec = {k:v for k,v in data.items() if k != "motivation"}
     validate(spec)
     return {"spec":spec,"motivation":data["motivation"],"origin":"LLM proposal (unverified)"}
 

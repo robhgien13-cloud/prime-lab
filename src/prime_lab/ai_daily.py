@@ -3,6 +3,7 @@ import json
 from datetime import datetime,timezone
 from pathlib import Path
 from .ai_batch import propose_batch
+from .inspiration import pick
 from .llm_structured import experiment_candidate
 from .pipeline import run as rebuild
 
@@ -16,7 +17,8 @@ def run(day=None,root=Path("."),candidates=None):
         item=json.loads(p.read_text(encoding="utf-8"))
         spec=item.get("experiment",{}).get("spec")
         if spec: known.add(json.dumps(spec,sort_keys=True))
-    batch=propose_batch() if candidates is None else candidates
+    words=pick(day)
+    batch=propose_batch(inspiration=words) if candidates is None else candidates
     made=0
     next_id=1
     for candidate in batch:
@@ -42,6 +44,7 @@ def run(day=None,root=Path("."),candidates=None):
             "plain_language":checked["plain_language"],
             "experiment":{"spec":spec,"result":finite},
             "motivation":candidate["motivation"],
+            "inspiration":words,
             "proof":"なし","prior_art":"未照合",
             "novelty_status":"過去の同一条件なし・学術的新規性は未確認",
             "provenance":{"generator":"Gemini API batch","llm_used":True},

@@ -1,0 +1,47 @@
+name: PRIME LAB free AI trial
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: prime-lab-ai-trial
+  cancel-in-progress: false
+jobs:
+  one-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: gemini-3.8-flash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check free-tier API configuration
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::error::Set GEMINI_API_KEY in repository Actions secrets."
+            exit 1
+          fi
+      - name: Test
+        run: python -m unittest discover -s tests -v
+      - name: Generate and check one AI hypothesis
+        run: python -m src.prime_lab.ai_trial
+      - name: Commit public results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/runs/ data/research.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive one unverified Gemini prime hypothesis"
+            git push
+          fi
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: prime-lab-gemini-trial
+          path: |
+            data/runs/
+            data/research.json
+          retention-days: 30

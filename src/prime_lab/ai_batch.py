@@ -15,7 +15,7 @@ def propose_batch(count=10, inspiration=None):
     url=f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     prompt="""あなたは数学の実験計画者。次のJSONオブジェクトのみ返すこと:
 {"candidates":[{"kind":"prime_residue","limit":1000,"modulus":6,"residues":[1,5],"motivation":"理由"}]}
-candidatesをちょうど10個、異なる検証条件で作る。kindはprime_residue,prime_last_digit,prime_gap_divisibleのいずれか。limitは20から10000、modulusは2から100、residuesは0からmodulus-1の重複なし配列。既知の定理・証明・新発見とは主張しない。初等的な素数の一の位の規則だけに偏らず、素数間隔と剰余を混ぜる。各候補のmotivationは日本語。余計なキーは出さない。"""
+candidatesをちょうど10個、異なる検証条件で作る。kindはprime_residue,prime_last_digit,prime_gap_divisibleのいずれか。limitは20から10000、modulusは2から100、residuesは0からmodulus-1の重複なし配列。既知の定理・証明・新発見とは主張しない。単なる素数の末尾・互いに素な剰余類など初等的に直ちに証明できる条件は提案しない。既存候補の数値上限だけを変えた案も避ける。素数間隔と剰余の中でも非自明な条件を優先する。ただし学術的新規性は未確認とする。各候補のmotivationは日本語。余計なキーは出さない。"""
     if inspiration:
         prompt += "\\n発想のきっかけとなる単語：" + "、".join(
             str(x["domain"]) + "：" + str(x["word"]) for x in inspiration

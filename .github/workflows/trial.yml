@@ -1,0 +1,26 @@
+name: PRIME LAB trial run
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Run trial pipeline
+        run: python -m src.prime_lab.pipeline
+      - name: Upload trial results
+        uses: actions/upload-artifact@v4
+        with:
+          name: prime-lab-trial
+          path: |
+            data/runs/
+            data/research.json
+          retention-days: 30

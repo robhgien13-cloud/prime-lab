@@ -2,7 +2,7 @@ name: PRIME LAB trial run
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   trial:
     runs-on: ubuntu-latest
@@ -16,6 +16,15 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Run trial pipeline
         run: python -m src.prime_lab.pipeline
+      - name: Publish trial data to GitHub Pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/runs/ data/research.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish PRIME LAB trial research records"
+            git push
+          fi
       - name: Upload trial results
         uses: actions/upload-artifact@v4
         with:

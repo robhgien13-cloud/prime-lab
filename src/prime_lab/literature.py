@@ -62,10 +62,11 @@ def annotate_recent(root=Path("."), max_records=3, fetch=_get):
         record = json.loads(path.read_text(encoding="utf-8"))
         if not record.get("provenance",{}).get("llm_used") or "反例発見" in record.get("status",""):
             continue
-        output = path.with_name(path.stem + ".literature.json")
+        output = root/"data"/"literature"/(record["run_id"] + ".json")
         if output.exists():
             continue
         report = {"run_id": record["run_id"], **search(record, fetch=fetch)}
+        output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(json.dumps(report, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
         completed.append(str(output))
     return completed

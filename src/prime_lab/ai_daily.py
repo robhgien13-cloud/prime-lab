@@ -18,14 +18,18 @@ def run(day=None,root=Path("."),candidates=None):
         if spec: known.add(json.dumps(spec,sort_keys=True))
     batch=propose_batch() if candidates is None else candidates
     made=0
+    next_id=1
     for candidate in batch:
         if made>=10: break
         spec=candidate["spec"]
         fingerprint=json.dumps(spec,sort_keys=True)
         if fingerprint in known: continue
-        rid=f"AI-{day.replace('-','')}-{made+1:02d}"
+        rid="AI-"+day.replace("-","")+"-"+str(next_id).zfill(2)
         path=folder/(rid+".json")
-        if path.exists(): continue
+        while path.exists():
+            next_id+=1
+            rid="AI-"+day.replace("-","")+"-"+str(next_id).zfill(2)
+            path=folder/(rid+".json")
         checked=experiment_candidate(candidate)
         finite=checked["finite_check"]
         record={
@@ -48,6 +52,7 @@ def run(day=None,root=Path("."),candidates=None):
             f.write("\n")
         known.add(fingerprint)
         made+=1
+        next_id+=1
     rebuild(day,root,create_templates=False)
     print(f"AI proposals archived: {made}/10; duplicates/invalid proposals are not replaced")
     return made

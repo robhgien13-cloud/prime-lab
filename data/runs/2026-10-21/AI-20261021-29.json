@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261021-29",
+  "date": "2026-10-21",
+  "title": "AI研究仮説 01（未査読）",
+  "status": "有限範囲で反例なし",
+  "summary": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+  "hypothesis": "30より大きいすべての素数pについて、pを30で割った余りが[1, 7, 11, 13, 17, 19, 23, 29]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "30より大きいすべての素数pについて、pを30で割った余りが[1, 7, 11, 13, 17, 19, 23, 29]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "1000以下の対象を計算しました。",
+    "finding": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_residue",
+      "limit": 1000,
+      "modulus": 30,
+      "residues": [
+        1,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_residue",
+        "limit": 1000,
+        "modulus": 30,
+        "residues": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ]
+      },
+      "statement": "30より大きいすべての素数pについて、pを30で割った余りが[1, 7, 11, 13, 17, 19, 23, 29]に含まれる",
+      "status": "有限範囲で反例なし",
+      "counterexample": null,
+      "tested_cases": 158,
+      "limit": 1000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。"
+    }
+  },
+  "motivation": "30を法とする互いに素な剰余類のうち特定の部分集合における素数の出現頻度を検証する。",
+  "inspiration": [
+    {
+      "domain": "芸術",
+      "word": "和音"
+    },
+    {
+      "domain": "技術",
+      "word": "回路"
+    },
+    {
+      "domain": "日常",
+      "word": "靴"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

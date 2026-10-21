@@ -1,0 +1,50 @@
+{
+  "run_id": "AI-20261021-29",
+  "query": "prime residue classes",
+  "status": "未確認",
+  "novelty_confirmed": false,
+  "sources": {
+    "oeis": {
+      "url": "https://oeis.org/search?q=prime+residue+classes&fmt=json",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "A078859",
+          "title": "Least positive residues (mod 210) representing those residue classes which can be the lesser of twin prime pairs (A001359)."
+        },
+        {
+          "id": "A387383",
+          "title": "Numbers k such that the cumulative sums of the k-th composition in graded reverse lexicographic order (\"standard order\", see A066099) do not cover all residue classes modulo p for "
+        },
+        {
+          "id": "A206549",
+          "title": "Nontrivial solution of x^2 == 1 (Modd p), where p is the n-th prime of the form 4*k+1, for odd restricted residue classes Modd p."
+        }
+      ]
+    },
+    "arxiv": {
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22prime+residue+classes%22&start=0&max_results=3",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "http://arxiv.org/abs/2601.19817v1",
+          "title": "U-Bit Collapse in Arnault Composites:Probing the Boundary of Strong Lucas Pseudoprimes"
+        },
+        {
+          "id": "http://arxiv.org/abs/1809.07244v1",
+          "title": "Prime-Residue-Class of Uniform Charges on the Integers"
+        },
+        {
+          "id": "http://arxiv.org/abs/2604.14596v1",
+          "title": "Prime--Zero Duality: Fractal Geometry, Renormalization-Group Flow, and an Information-Ontological Framework for Number Theory"
+        }
+      ]
+    },
+    "zbmath": {
+      "url": "https://zbmath.org/?q=prime%20residue%20classes",
+      "state": "検索リンクのみ・自動取得未実装",
+      "hits": []
+    }
+  },
+  "caveat": "検索結果は関連文献の候補に過ぎず、同値性や新規性の判定ではない。"
+}

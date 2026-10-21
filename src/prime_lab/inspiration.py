@@ -10,6 +10,14 @@ WORDS = {
     "日常": ["鍵","階段","傘","時計","料理","窓","靴","橋","迷路","鏡"],
     "技術": ["暗号","圧縮","通信","センサー","ロボット","回路","記憶","検索","誤り訂正","信号"],
 }
+def pick_random(count=3):
+    """Choose fresh cross-domain words for each research execution."""
+    if type(count) is not int or not 1 <= count <= len(WORDS):
+        raise ValueError("Invalid count")
+    rng = random.SystemRandom()
+    domains = rng.sample(sorted(WORDS), count)
+    return [{"domain": d, "word": rng.choice(WORDS[d])} for d in domains]
+
 def pick(day, count=3):
     """Same UTC date produces the same distinct-domain words."""
     if not isinstance(day,str) or len(day)!=10: raise ValueError("Expected ISO date")

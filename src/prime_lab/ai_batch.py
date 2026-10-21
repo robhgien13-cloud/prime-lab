@@ -15,7 +15,7 @@ def propose_batch(count=10, inspiration=None):
     url=f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     prompt="""あなたは数学の実験計画者。次のJSONオブジェクトのみ返すこと:
 {"candidates":[{"kind":"prime_residue","limit":1000,"modulus":6,"residues":[1,5],"motivation":"理由"}]}
-candidatesをちょうど10個、異なる検証条件で作る。kindはprime_residue,prime_last_digit,prime_gap_divisibleのいずれか。limitは20から10000、modulusは2から100、residuesは0からmodulus-1の重複なし配列。既知の定理・証明・新発見とは主張しない。単なる素数の末尾・互いに素な剰余類など初等的に直ちに証明できる条件は提案しない。既存候補の数値上限だけを変えた案も避ける。素数間隔と剰余の中でも非自明な条件を優先する。ただし学術的新規性は未確認とする。各候補のmotivationは日本語。余計なキーは出さない。"""
+candidatesをちょうど10個、異なる検証条件で作る。新しい2種類を合計6件以上含める。kindはprime_residue,prime_last_digit,prime_gap_divisible,prime_gap_bound,prime_count_windowのいずれか。prime_gap_boundはwindow以上の素数から始まる隣接素数間隔がthreshold以下か検証する。prime_count_windowは幅windowの全整数区間に素数がthreshold個以上あるか検証する。新2種類はkind,limit,window,threshold,motivationだけを持つ。windowは2から500、thresholdは0から100、limitは100から10000。limitは20から10000、modulusは2から100、residuesは0からmodulus-1の重複なし配列。既知の定理・証明・新発見とは主張しない。単なる素数の末尾・互いに素な剰余類など初等的に直ちに証明できる条件は提案しない。既存候補の数値上限だけを変えた案も避ける。素数間隔と剰余の中でも非自明な条件を優先する。ただし学術的新規性は未確認とする。各候補のmotivationは日本語。余計なキーは出さない。"""
     if inspiration:
         prompt += "\\n発想のきっかけとなる単語：" + "、".join(
             str(x["domain"]) + "：" + str(x["word"]) for x in inspiration

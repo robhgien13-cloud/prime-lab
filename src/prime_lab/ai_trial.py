@@ -2,7 +2,8 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
-from .llm_structured import propose, experiment_candidate
+from .gemini_free import propose
+from .llm_structured import experiment_candidate
 from .pipeline import run as refresh
 
 def run(day=None, root=Path("."), candidate=None):

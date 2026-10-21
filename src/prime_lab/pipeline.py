@@ -51,14 +51,15 @@ def record(i, day, limit=1000):
         "created_at": datetime.now(timezone.utc).isoformat(),
     }
 
-def run(day, root=Path("."), limit=1000):
+def run(day, root=Path("."), limit=1000, create_templates=True):
     folder = root / "data" / "runs" / day
     folder.mkdir(parents=True, exist_ok=True)
-    for i in range(1, 11):
-        entry = record(i, day, limit)
-        path = folder / (entry["run_id"] + ".json")
-        if not path.exists():
-            path.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if create_templates:
+        for i in range(1, 11):
+            entry = record(i, day, limit)
+            path = folder / (entry["run_id"] + ".json")
+            if not path.exists():
+                path.write_text(json.dumps(entry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     all_records = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((root / "data" / "runs").glob("*/*.json"))]
     ids = [r["run_id"] for r in all_records]
     if len(ids) != len(set(ids)):

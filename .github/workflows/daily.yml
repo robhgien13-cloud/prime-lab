@@ -1,0 +1,33 @@
+name: PRIME LAB daily 10 checks
+on:
+  schedule:
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: prime-lab-daily
+  cancel-in-progress: false
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test
+        run: python -m unittest discover -s tests -v
+      - name: Run ten deterministic checks
+        run: python -m src.prime_lab.daily
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/runs/ data/research.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive daily ten finite checks"
+            git pull --rebase
+            git push
+          fi

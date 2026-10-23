@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261023-06",
+  "date": "2026-10-23",
+  "title": "AI研究仮説 06（未査読）",
+  "status": "有限範囲で反例なし",
+  "summary": "8000以下では反例が見つかりませんでした。証明ではありません。",
+  "hypothesis": "幅400のすべての整数区間には素数が25個以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅400のすべての整数区間には素数が25個以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "8000以下の対象を計算しました。",
+    "finding": "8000以下では反例が見つかりませんでした。証明ではありません。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_count_window",
+      "limit": 8000,
+      "window": 400,
+      "threshold": 25
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_count_window",
+        "limit": 8000,
+        "window": 400,
+        "threshold": 25
+      },
+      "statement": "幅400のすべての整数区間には素数が25個以上存在する",
+      "status": "有限範囲で反例なし",
+      "counterexample": null,
+      "tested_cases": 7600,
+      "limit": 8000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "8000以下では反例が見つかりませんでした。証明ではありません。"
+    }
+  },
+  "motivation": "複数の音が重なり合う和音の響きの厚みを抽象化し、長めの整数区間内に出現する素数の総数が一定の豊かさの基準を超えるかを測定する。",
+  "inspiration": [
+    {
+      "domain": "社会",
+      "word": "移住"
+    },
+    {
+      "domain": "自然",
+      "word": "渦"
+    },
+    {
+      "domain": "芸術",
+      "word": "和音"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

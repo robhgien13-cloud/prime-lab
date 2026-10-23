@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261023-01",
+  "date": "2026-10-23",
+  "title": "AI研究仮説 01（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "211で観測値12が条件に反しました。",
+  "hypothesis": "200以上の素数から始まる隣接素数間隔は常に6以下",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "200以上の素数から始まる隣接素数間隔は常に6以下という条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "5000以下の対象を計算しました。",
+    "finding": "211で観測値12が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_bound",
+      "limit": 5000,
+      "window": 200,
+      "threshold": 6
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_bound",
+        "limit": 5000,
+        "window": 200,
+        "threshold": 6
+      },
+      "statement": "200以上の素数から始まる隣接素数間隔は常に6以下",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 211,
+        "observed_value": 12
+      },
+      "tested_cases": 1,
+      "limit": 5000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "211で観測値12が条件に反しました。"
+    }
+  },
+  "motivation": "都市間人口移動の流出入における局所的な人口密度の変動閾値を模し、ある開始位置以降の素数間隔が一定の狭小範囲に収まる現象の頻度を観測する。",
+  "inspiration": [
+    {
+      "domain": "社会",
+      "word": "移住"
+    },
+    {
+      "domain": "自然",
+      "word": "渦"
+    },
+    {
+      "domain": "芸術",
+      "word": "和音"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

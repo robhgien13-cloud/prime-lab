@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261023-07",
+  "date": "2026-10-23",
+  "title": "AI研究仮説 07（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "41で予想と異なる余り11が出ました。",
+  "hypothesis": "30より大きいすべての素数pについて、pを30で割った余りが[1, 7, 13, 19]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "30より大きいすべての素数pについて、pを30で割った余りが[1, 7, 13, 19]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "2500以下の対象を計算しました。",
+    "finding": "41で予想と異なる余り11が出ました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_residue",
+      "limit": 2500,
+      "modulus": 30,
+      "residues": [
+        1,
+        7,
+        13,
+        19
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_residue",
+        "limit": 2500,
+        "modulus": 30,
+        "residues": [
+          1,
+          7,
+          13,
+          19
+        ]
+      },
+      "statement": "30より大きいすべての素数pについて、pを30で割った余りが[1, 7, 13, 19]に含まれる",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 41,
+        "observed_remainder": 11
+      },
+      "tested_cases": 3,
+      "limit": 2500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "41で予想と異なる余り11が出ました。"
+    }
+  },
+  "motivation": "複数の動的要素が干渉し合う複雑な移住ネットワークを想定し、30を法とする非自明な部分剰余類における素数の分布偏倚を詳細に探索する。",
+  "inspiration": [
+    {
+      "domain": "社会",
+      "word": "移住"
+    },
+    {
+      "domain": "自然",
+      "word": "渦"
+    },
+    {
+      "domain": "芸術",
+      "word": "和音"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

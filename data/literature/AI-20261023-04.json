@@ -1,0 +1,50 @@
+{
+  "run_id": "AI-20261023-04",
+  "query": "primes in short intervals",
+  "status": "未確認",
+  "novelty_confirmed": false,
+  "sources": {
+    "oeis": {
+      "url": "https://oeis.org/search?q=primes+in+short+intervals&fmt=json",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "A138511",
+          "title": "Semiprimes where the larger prime factor is greater than the square of the smaller prime factor, short: semiprimes p*q, p^2 < q."
+        },
+        {
+          "id": "A080165",
+          "title": "Primes having initial digits \"10\" in binary representation."
+        },
+        {
+          "id": "A218850",
+          "title": "a(n) is the least r > 1 for which the interval (r*(2*n-1), r*(2*n+1)) contains no prime, or 0 if no such r exists."
+        }
+      ]
+    },
+    "arxiv": {
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22primes+in+short+intervals%22&start=0&max_results=3",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "http://arxiv.org/abs/math/0409530v2",
+          "title": "Higher moments of primes in short intervals I"
+        },
+        {
+          "id": "http://arxiv.org/abs/math/0409531v2",
+          "title": "Higher moments of primes in short intervals II"
+        },
+        {
+          "id": "http://arxiv.org/abs/1311.0597v4",
+          "title": "An extended pair-correlation conjecture and primes in short intervals"
+        }
+      ]
+    },
+    "zbmath": {
+      "url": "https://zbmath.org/?q=primes%20in%20short%20intervals",
+      "state": "検索リンクのみ・自動取得未実装",
+      "hits": []
+    }
+  },
+  "caveat": "検索結果は関連文献の候補に過ぎず、同値性や新規性の判定ではない。"
+}

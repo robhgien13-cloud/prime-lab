@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261024-01",
+  "date": "2026-10-24",
+  "title": "AI研究仮説 01（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "19で予想と異なる余り2が出ました。",
+  "hypothesis": "17より大きいすべての素数pについて、pを17で割った余りが[3, 5, 6, 7, 10, 11, 12, 14]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "17より大きいすべての素数pについて、pを17で割った余りが[3, 5, 6, 7, 10, 11, 12, 14]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "1000以下の対象を計算しました。",
+    "finding": "19で予想と異なる余り2が出ました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_residue",
+      "limit": 1000,
+      "modulus": 17,
+      "residues": [
+        3,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        14
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_residue",
+        "limit": 1000,
+        "modulus": 17,
+        "residues": [
+          3,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12,
+          14
+        ]
+      },
+      "statement": "17より大きいすべての素数pについて、pを17で割った余りが[3, 5, 6, 7, 10, 11, 12, 14]に含まれる",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 19,
+        "observed_remainder": 2
+      },
+      "tested_cases": 1,
+      "limit": 1000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "19で予想と異なる余り2が出ました。"
+    }
+  },
+  "motivation": "暗号技術における平方剰余の偏りを確認するため、モジュラス17の特定剰余類に属する素数の分布傾向を検証する",
+  "inspiration": [
+    {
+      "domain": "技術",
+      "word": "暗号"
+    },
+    {
+      "domain": "自然",
+      "word": "潮汐"
+    },
+    {
+      "domain": "社会",
+      "word": "市場"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

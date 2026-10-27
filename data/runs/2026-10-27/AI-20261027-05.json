@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261027-05",
+  "date": "2026-10-27",
+  "title": "AI研究仮説 05（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "1308で観測値7が条件に反しました。",
+  "hypothesis": "幅80のすべての整数区間には素数が8個以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅80のすべての整数区間には素数が8個以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "5500以下の対象を計算しました。",
+    "finding": "1308で観測値7が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_count_window",
+      "limit": 5500,
+      "window": 80,
+      "threshold": 8
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_count_window",
+        "limit": 5500,
+        "window": 80,
+        "threshold": 8
+      },
+      "statement": "幅80のすべての整数区間には素数が8個以上存在する",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 1308,
+        "observed_value": 7
+      },
+      "tested_cases": 1307,
+      "limit": 5500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "1308で観測値7が条件に反しました。"
+    }
+  },
+  "motivation": "社会制度の改定周期を模し、幅80の短周期区間における素数の密集度を検証する。",
+  "inspiration": [
+    {
+      "domain": "社会",
+      "word": "法律"
+    },
+    {
+      "domain": "技術",
+      "word": "暗号"
+    },
+    {
+      "domain": "芸術",
+      "word": "和音"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

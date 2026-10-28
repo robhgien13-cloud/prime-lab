@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261028-08",
+  "date": "2026-10-28",
+  "title": "AI研究仮説 08（未査読）",
+  "status": "有限範囲で反例なし",
+  "summary": "5000以下では反例が見つかりませんでした。証明ではありません。",
+  "hypothesis": "幅150のすべての整数区間には素数が12個以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅150のすべての整数区間には素数が12個以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "5000以下の対象を計算しました。",
+    "finding": "5000以下では反例が見つかりませんでした。証明ではありません。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_count_window",
+      "limit": 5000,
+      "window": 150,
+      "threshold": 12
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_count_window",
+        "limit": 5000,
+        "window": 150,
+        "threshold": 12
+      },
+      "statement": "幅150のすべての整数区間には素数が12個以上存在する",
+      "status": "有限範囲で反例なし",
+      "counterexample": null,
+      "tested_cases": 4850,
+      "limit": 5000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "5000以下では反例が見つかりませんでした。証明ではありません。"
+    }
+  },
+  "motivation": "菌類のコロニー形成における局所的な密集度を高次元空間で捉え、幅150の区間に素数が12個以上内包される局所的過密領域を特定する",
+  "inspiration": [
+    {
+      "domain": "技術",
+      "word": "ロボット"
+    },
+    {
+      "domain": "自然",
+      "word": "菌類"
+    },
+    {
+      "domain": "日常",
+      "word": "鍵"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

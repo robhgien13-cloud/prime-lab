@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261028-07",
+  "date": "2026-10-28",
+  "title": "AI研究仮説 07（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "283で観測値10が条件に反しました。",
+  "hypothesis": "250以上の素数から始まる隣接素数間隔は常に6以下",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "250以上の素数から始まる隣接素数間隔は常に6以下という条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "6000以下の対象を計算しました。",
+    "finding": "283で観測値10が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_bound",
+      "limit": 6000,
+      "window": 250,
+      "threshold": 6
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_bound",
+        "limit": 6000,
+        "window": 250,
+        "threshold": 6
+      },
+      "statement": "250以上の素数から始まる隣接素数間隔は常に6以下",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 283,
+        "observed_value": 10
+      },
+      "tested_cases": 8,
+      "limit": 6000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "283で観測値10が条件に反しました。"
+    }
+  },
+  "motivation": "ロボットの多段階フィードバック制御における制御不感帯を数理に落とし込み、250以上の素数における狭小な素数間隔の限界を検証する",
+  "inspiration": [
+    {
+      "domain": "技術",
+      "word": "ロボット"
+    },
+    {
+      "domain": "自然",
+      "word": "菌類"
+    },
+    {
+      "domain": "日常",
+      "word": "鍵"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261028-04",
+  "date": "2026-10-28",
+  "title": "AI研究仮説 04（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "23で予想と異なる余り4が出ました。",
+  "hypothesis": "19より大きいすべての素数pの余りが[1, 3, 9, 13]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "19より大きいすべての素数pの余りが[1, 3, 9, 13]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "4500以下の対象を計算しました。",
+    "finding": "23で予想と異なる余り4が出ました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_last_digit",
+      "limit": 4500,
+      "modulus": 19,
+      "residues": [
+        1,
+        3,
+        9,
+        13
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_last_digit",
+        "limit": 4500,
+        "modulus": 19,
+        "residues": [
+          1,
+          3,
+          9,
+          13
+        ]
+      },
+      "statement": "19より大きいすべての素数pの余りが[1, 3, 9, 13]に含まれる",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 23,
+        "observed_remainder": 4
+      },
+      "tested_cases": 1,
+      "limit": 4500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "23で予想と異なる余り4が出ました。"
+    }
+  },
+  "motivation": "ロボットセンサーの誤差許容限界の非対称性に着想を得て、19進法下での特定の末尾パターンの出現頻度を検証する",
+  "inspiration": [
+    {
+      "domain": "技術",
+      "word": "ロボット"
+    },
+    {
+      "domain": "自然",
+      "word": "菌類"
+    },
+    {
+      "domain": "日常",
+      "word": "鍵"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

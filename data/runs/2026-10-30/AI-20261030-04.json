@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261030-04",
+  "date": "2026-10-30",
+  "title": "AI研究仮説 04（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "47で予想と異なる余り5が出ました。",
+  "hypothesis": "42より大きいすべての素数pについて、pを42で割った余りが[1, 11, 13, 17, 19, 23, 25, 29, 31, 37, 41]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "42より大きいすべての素数pについて、pを42で割った余りが[1, 11, 13, 17, 19, 23, 25, 29, 31, 37, 41]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "8000以下の対象を計算しました。",
+    "finding": "47で予想と異なる余り5が出ました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_residue",
+      "limit": 8000,
+      "modulus": 42,
+      "residues": [
+        1,
+        11,
+        13,
+        17,
+        19,
+        23,
+        25,
+        29,
+        31,
+        37,
+        41
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_residue",
+        "limit": 8000,
+        "modulus": 42,
+        "residues": [
+          1,
+          11,
+          13,
+          17,
+          19,
+          23,
+          25,
+          29,
+          31,
+          37,
+          41
+        ]
+      },
+      "statement": "42より大きいすべての素数pについて、pを42で割った余りが[1, 11, 13, 17, 19, 23, 25, 29, 31, 37, 41]に含まれる",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 47,
+        "observed_remainder": 5
+      },
+      "tested_cases": 2,
+      "limit": 8000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "47で予想と異なる余り5が出ました。"
+    }
+  },
+  "motivation": "複層的な年輪構造の重なりを表現した高次剰余類における素数の局所的集中傾向を探索する。",
+  "inspiration": [
+    {
+      "domain": "自然",
+      "word": "年輪"
+    },
+    {
+      "domain": "社会",
+      "word": "競争"
+    },
+    {
+      "domain": "技術",
+      "word": "通信"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

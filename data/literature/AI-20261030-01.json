@@ -1,0 +1,42 @@
+{
+  "run_id": "AI-20261030-01",
+  "query": "last digits of primes",
+  "status": "未確認",
+  "novelty_confirmed": false,
+  "sources": {
+    "oeis": {
+      "url": "https://oeis.org/search?q=last+digits+of+primes&fmt=json",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "A088136",
+          "title": "Primes such that sum of first and last digits is prime."
+        },
+        {
+          "id": "A091762",
+          "title": "Last n digits of concatenation of first n primes."
+        },
+        {
+          "id": "A088134",
+          "title": "Numbers n such that sum of first and last digits is prime."
+        }
+      ]
+    },
+    "arxiv": {
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22last+digits+of+primes%22&start=0&max_results=3",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "http://arxiv.org/abs/1409.7994v2",
+          "title": "Randomness is valid at large numbers"
+        }
+      ]
+    },
+    "zbmath": {
+      "url": "https://zbmath.org/?q=last%20digits%20of%20primes",
+      "state": "検索リンクのみ・自動取得未実装",
+      "hits": []
+    }
+  },
+  "caveat": "検索結果は関連文献の候補に過ぎず、同値性や新規性の判定ではない。"
+}

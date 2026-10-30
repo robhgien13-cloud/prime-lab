@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261030-03",
+  "date": "2026-10-30",
+  "title": "AI研究仮説 03（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "2478で観測値14が条件に反しました。",
+  "hypothesis": "幅150のすべての整数区間には素数が15個以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅150のすべての整数区間には素数が15個以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "6000以下の対象を計算しました。",
+    "finding": "2478で観測値14が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_count_window",
+      "limit": 6000,
+      "window": 150,
+      "threshold": 15
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_count_window",
+        "limit": 6000,
+        "window": 150,
+        "threshold": 15
+      },
+      "statement": "幅150のすべての整数区間には素数が15個以上存在する",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 2478,
+        "observed_value": 14
+      },
+      "tested_cases": 2477,
+      "limit": 6000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "2478で観測値14が条件に反しました。"
+    }
+  },
+  "motivation": "限られた資源を奪い合う競争社会のモデルに基づき、狭い区間内に含まれる素数の下限密度を観測する。",
+  "inspiration": [
+    {
+      "domain": "自然",
+      "word": "年輪"
+    },
+    {
+      "domain": "社会",
+      "word": "競争"
+    },
+    {
+      "domain": "技術",
+      "word": "通信"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

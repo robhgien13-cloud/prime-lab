@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261030-01",
+  "date": "2026-10-30",
+  "title": "AI研究仮説 01（未査読）",
+  "status": "有限範囲で反例なし",
+  "summary": "3000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+  "hypothesis": "10より大きいすべての素数pの余りが[1, 3, 7, 9]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "10より大きいすべての素数pの余りが[1, 3, 7, 9]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "3000以下の対象を計算しました。",
+    "finding": "3000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_last_digit",
+      "limit": 3000,
+      "modulus": 10,
+      "residues": [
+        1,
+        3,
+        7,
+        9
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_last_digit",
+        "limit": 3000,
+        "modulus": 10,
+        "residues": [
+          1,
+          3,
+          7,
+          9
+        ]
+      },
+      "statement": "10より大きいすべての素数pの余りが[1, 3, 7, 9]に含まれる",
+      "status": "有限範囲で反例なし",
+      "counterexample": null,
+      "tested_cases": 426,
+      "limit": 3000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "3000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。"
+    }
+  },
+  "motivation": "社会的な空間競合を模した、特定の末尾数字が連続して出現する偏りの限界を調べる。",
+  "inspiration": [
+    {
+      "domain": "自然",
+      "word": "年輪"
+    },
+    {
+      "domain": "社会",
+      "word": "競争"
+    },
+    {
+      "domain": "技術",
+      "word": "通信"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

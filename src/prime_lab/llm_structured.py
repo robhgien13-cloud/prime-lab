@@ -12,7 +12,7 @@ from .structured import validate, verify
 SYSTEM = """あなたは素数の数学研究における仮説提案者です。
 自由なコードを生成しないでください。必ずJSONオブジェクトのみ返してください。
 JSONには "kind", "limit", "modulus", "residues", "motivation" の5つだけ含めてください。
-kindはprime_residue, prime_last_digit, prime_gap_divisibleのいずれか。
+kindはprime_residue, prime_last_digit, prime_gap_divisible, prime_gap_bound, prime_count_window, twin_prime_count_window, prime_count_window_at_most, prime_gap_lower_boundのいずれか。
 limitは20以上10000以下の整数、modulusは2以上100以下の整数、
 residuesは0以上modulus未満の重複のない整数配列です。
 motivationはなぜその余りの規則を調べる価値があると思うか、やさしい日本語で説明。

@@ -12,8 +12,8 @@ class TwelveKindsTests(unittest.TestCase):
                 self.assertIn("status", verify(spec))
                 self.assertEqual(parse_candidate(json.dumps({**spec,"motivation":"調査する"}))["spec"], spec)
     def test_known_counts(self):
-        self.assertEqual(verify({"kind":"cousin_prime_count_window","limit":100,"window":10,"threshold":1})["counterexample"]["number"], 8)
-        self.assertIsNone(verify({"kind":"small_gap_count_window","limit":100,"window":10,"threshold":0})["counterexample"] if False else None)
+        self.assertEqual(verify({"kind":"cousin_prime_count_window","limit":100,"window":10,"threshold":1})["counterexample"]["number"], 20)
+        self.assertEqual(verify({"kind":"small_gap_count_window","limit":100,"window":10,"threshold":0})["counterexample"]["number"], 2)
     def test_invalid_window(self):
         with self.assertRaises(ValueError):
             verify({"kind":"prime_triplet_count_window","limit":100,"window":200,"threshold":1})

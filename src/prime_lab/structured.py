@@ -7,16 +7,16 @@ from __future__ import annotations
 from .engine import prime
 
 MAX_LIMIT = 10000
-ALLOWED = {"prime_residue", "prime_gap_divisible", "prime_last_digit", "prime_gap_bound", "prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound"}
+ALLOWED = {"prime_residue", "prime_gap_divisible", "prime_last_digit", "prime_gap_bound", "prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound", "cousin_prime_count_window"}
 
 def validate(spec):
     if not isinstance(spec, dict):
         raise ValueError("Expected dict")
-    if spec.get("kind") in {"prime_gap_bound", "prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound"}:
+    if spec.get("kind") in {"prime_gap_bound", "prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound", "cousin_prime_count_window"}:
         if set(spec) != {"kind", "limit", "window", "threshold"}:
             raise ValueError("Invalid expanded spec")
         limit, window, threshold = spec["limit"], spec["window"], spec["threshold"]
-        if type(limit) is not int or not 100 <= limit <= MAX_LIMIT or type(window) is not int or not 2 <= window <= 500 or type(threshold) is not int or not 0 <= threshold <= 100 or (spec["kind"] in {"prime_count_window", "twin_prime_count_window", "prime_count_window_at_most"} and window > limit - 1):
+        if type(limit) is not int or not 100 <= limit <= MAX_LIMIT or type(window) is not int or not 2 <= window <= 500 or type(threshold) is not int or not 0 <= threshold <= 100 or (spec["kind"] in {"prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "cousin_prime_count_window", "sexy_prime_count_window", "prime_triplet_count_window", "small_gap_count_window"} and window > limit - 1):
             raise ValueError("Invalid range")
         return spec["kind"], limit, window, threshold
     if set(spec) != {"kind", "limit", "modulus", "residues"}:
@@ -35,9 +35,9 @@ def validate(spec):
 def verify(spec):
     kind, limit, modulus, residues = validate(spec)
     ps = [n for n in range(2, limit + 1) if prime(n)]
-    if kind in {"prime_gap_bound", "prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound"}:
+    if kind in {"prime_gap_bound", "prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound", "cousin_prime_count_window"}:
         window, threshold = modulus, residues
-        if kind in {"prime_gap_bound", "prime_gap_lower_bound"}:
+        if kind in {"prime_gap_bound", "prime_gap_lower_bound", "cousin_prime_count_window"}:
             items = [(a, b-a) for a,b in zip(ps, ps[1:]) if a >= window]
             if kind == "prime_gap_bound":
                 statement = f"{window}以上の素数から始まる隣接素数間隔は常に{threshold}以下"
@@ -56,14 +56,23 @@ def verify(spec):
                     right += 1
                 if kind == "twin_prime_count_window":
                     count = sum(1 for i in range(left, max(left, right-1)) if ps[i+1] - ps[i] == 2 and ps[i+1] < start + window)
+                elif kind in {"cousin_prime_count_window", "sexy_prime_count_window", "small_gap_count_window"}:
+                    gap = 4 if kind == "cousin_prime_count_window" else 6 if kind == "sexy_prime_count_window" else threshold
+                    count = sum(1 for i in range(left, right-1) if (ps[i+1]-ps[i] == gap if kind != "small_gap_count_window" else ps[i+1]-ps[i] <= gap))
+                elif kind == "prime_triplet_count_window":
+                    count = sum(1 for i in range(left, right-2) if (ps[i+1]-ps[i], ps[i+2]-ps[i+1]) == (2, 4))
                 else:
                     count = right-left
                 items.append((start, count))
             if kind == "prime_count_window_at_most":
                 statement = f"幅{window}のすべての整数区間には素数が{threshold}個以下存在する"
                 bad = next(((n,v) for n,v in items if v > threshold), None)
+            elif kind == "small_gap_count_window":
+                statement = f"幅{window}のすべての整数区間には間隔{threshold}以下の隣接素数ペアが1組以上存在する"
+                bad = next(((n,v) for n,v in items if v < 1), None)
             else:
-                unit = "双子素数の組" if kind == "twin_prime_count_window" else "素数"
+                units = {"twin_prime_count_window":"双子素数の組", "cousin_prime_count_window":"差4の隣接素数ペア", "sexy_prime_count_window":"差6の隣接素数ペア", "prime_triplet_count_window":"間隔(2,4)の連続素数3個組"}
+                unit = units.get(kind, "素数")
                 statement = f"幅{window}のすべての整数区間には{unit}が{threshold}個以上存在する"
                 bad = next(((n,v) for n,v in items if v < threshold), None)
         return {

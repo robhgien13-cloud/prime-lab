@@ -4,6 +4,7 @@ These are exploratory models, not definitions asserted by the researcher.
 No numerical observation here is a proof of a new prime law.
 """
 import json
+import os
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -85,4 +86,6 @@ def run(root=Path("."), day=None, limit=10000, sample=24):
     return output
 
 if __name__ == "__main__":
-    print(run())
+    limit = int(os.environ.get("WORLD_LIMIT", "10000"))
+    sample = int(os.environ.get("WORLD_SAMPLE", "24"))
+    print(run(limit=limit, sample=sample))

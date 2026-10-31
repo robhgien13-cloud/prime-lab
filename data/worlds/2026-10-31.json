@@ -1,0 +1,207 @@
+{
+  "date": "2026-10-31",
+  "schema_version": "1.0",
+  "model_status": "探索用の仮定・未確定",
+  "worlds": {
+    "integer_world": "1,2,3,... の添字",
+    "prime_world": "2,3,5,7,... の素数値",
+    "mapping": "n -> p_n（n番目の素数）"
+  },
+  "sample_pairs": [
+    {
+      "integer_index": 1,
+      "prime_value": 2
+    },
+    {
+      "integer_index": 2,
+      "prime_value": 3
+    },
+    {
+      "integer_index": 3,
+      "prime_value": 5
+    },
+    {
+      "integer_index": 4,
+      "prime_value": 7
+    },
+    {
+      "integer_index": 5,
+      "prime_value": 11
+    },
+    {
+      "integer_index": 6,
+      "prime_value": 13
+    },
+    {
+      "integer_index": 7,
+      "prime_value": 17
+    },
+    {
+      "integer_index": 8,
+      "prime_value": 19
+    },
+    {
+      "integer_index": 9,
+      "prime_value": 23
+    },
+    {
+      "integer_index": 10,
+      "prime_value": 29
+    },
+    {
+      "integer_index": 11,
+      "prime_value": 31
+    },
+    {
+      "integer_index": 12,
+      "prime_value": 37
+    },
+    {
+      "integer_index": 13,
+      "prime_value": 41
+    },
+    {
+      "integer_index": 14,
+      "prime_value": 43
+    },
+    {
+      "integer_index": 15,
+      "prime_value": 47
+    },
+    {
+      "integer_index": 16,
+      "prime_value": 53
+    },
+    {
+      "integer_index": 17,
+      "prime_value": 59
+    },
+    {
+      "integer_index": 18,
+      "prime_value": 61
+    },
+    {
+      "integer_index": 19,
+      "prime_value": 67
+    },
+    {
+      "integer_index": 20,
+      "prime_value": 71
+    },
+    {
+      "integer_index": 21,
+      "prime_value": 73
+    },
+    {
+      "integer_index": 22,
+      "prime_value": 79
+    },
+    {
+      "integer_index": 23,
+      "prime_value": 83
+    },
+    {
+      "integer_index": 24,
+      "prime_value": 89
+    }
+  ],
+  "consecutive_prime_gaps": [
+    1,
+    2,
+    2,
+    4,
+    2,
+    4,
+    2,
+    4,
+    6,
+    2,
+    6,
+    4,
+    2,
+    4,
+    6,
+    6,
+    2,
+    6,
+    4,
+    2,
+    6,
+    4,
+    6,
+    8
+  ],
+  "candidate_transport_operations": [
+    {
+      "integer_indices": [
+        1,
+        1
+      ],
+      "integer_sum": 2,
+      "prime_world_sum_candidate": 3,
+      "ordinary_sum_of_prime_values": 4
+    },
+    {
+      "integer_indices": [
+        1,
+        2
+      ],
+      "integer_sum": 3,
+      "prime_world_sum_candidate": 5,
+      "ordinary_sum_of_prime_values": 5
+    },
+    {
+      "integer_indices": [
+        2,
+        3
+      ],
+      "integer_sum": 5,
+      "prime_world_sum_candidate": 11,
+      "ordinary_sum_of_prime_values": 8
+    },
+    {
+      "integer_indices": [
+        3,
+        4
+      ],
+      "integer_sum": 7,
+      "prime_world_sum_candidate": 17,
+      "ordinary_sum_of_prime_values": 12
+    }
+  ],
+  "prediction_baseline": {
+    "method": "前半の平均素数間隔を後半に適用する単純な比較基準",
+    "train_indices": [
+      1,
+      12
+    ],
+    "test_indices": [
+      13,
+      24
+    ],
+    "rounded_gap": 3,
+    "absolute_errors": [
+      1,
+      1,
+      1,
+      3,
+      3,
+      1,
+      3,
+      1,
+      1,
+      3,
+      1,
+      3
+    ],
+    "mean_absolute_error": 1.8333333333333333,
+    "exact_matches": 0
+  },
+  "open_questions": [
+    "対応を通じた演算は研究上有用か、それとも単なる記号の置換か",
+    "素数間隔に予測可能な構造があるか",
+    "各素数を起点とする局所世界をどう定義するか",
+    "より大きな範囲で仮説が維持されるか"
+  ],
+  "caution": "演算は候補であり採用済みの定義ではない。有限計算は証明でなく、予測基準も新発見ではない。"
+}

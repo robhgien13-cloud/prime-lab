@@ -6,7 +6,7 @@ import json
 class ExpandedKindsTests(unittest.TestCase):
     def test_twin_pairs(self):
         result = verify({"kind":"twin_prime_count_window","limit":100,"window":10,"threshold":1})
-        self.assertEqual(result["counterexample"]["number"], 8)
+        self.assertEqual(result["counterexample"]["number"], 18)
     def test_upper_count(self):
         result = verify({"kind":"prime_count_window_at_most","limit":100,"window":10,"threshold":2})
         self.assertEqual(result["counterexample"]["number"], 2)

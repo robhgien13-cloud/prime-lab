@@ -3,7 +3,7 @@ import json
 from datetime import datetime,timezone
 from pathlib import Path
 from .ai_batch import propose_batch
-from .inspiration import pick_random
+from .inspiration import pick_random\nfrom .research_feedback import prompt_context
 from .llm_structured import experiment_candidate
 from .pipeline import run as rebuild
 
@@ -18,7 +18,7 @@ def run(day=None,root=Path("."),candidates=None):
         spec=item.get("experiment",{}).get("spec")
         if spec: known.add(json.dumps(spec,sort_keys=True))
     words=pick_random()
-    batch=propose_batch(inspiration=words) if candidates is None else candidates
+    batch=propose_batch(inspiration=words, research_context=prompt_context(root)) if candidates is None else candidates
     made=0
     next_id=1
     for candidate in batch:
@@ -43,7 +43,7 @@ def run(day=None,root=Path("."),candidates=None):
             "hypothesis_origin":"LLM structured candidate (unverified)",
             "plain_language":checked["plain_language"],
             "experiment":{"spec":spec,"result":finite},
-            "motivation":candidate["motivation"],
+            "motivation":candidate["motivation"],\n            "research_direction":"予測・生成と分布・構造の規則性を探索",
             "inspiration":words,
             "proof":"なし","prior_art":"未照合",
             "novelty_status":"過去の同一条件なし・学術的新規性は未確認",

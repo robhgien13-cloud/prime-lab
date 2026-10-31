@@ -7,7 +7,7 @@ from pathlib import Path
 
 THEMES = (
     "prime_gap_bound", "prime_count_window", "prime_gap_divisible",
-    "prime_residue", "prime_last_digit", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound",
+    "prime_residue", "prime_last_digit", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound", "cousin_prime_count_window", "sexy_prime_count_window", "prime_triplet_count_window", "small_gap_count_window",
 )
 RESEARCH_GOALS = (
     "素数の予測・生成に関する検証可能な規則の探索",

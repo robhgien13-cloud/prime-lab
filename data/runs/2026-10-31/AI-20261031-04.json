@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261031-04",
+  "date": "2026-10-31",
+  "title": "AI研究仮説 04（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "241で観測値10が条件に反しました。",
+  "hypothesis": "220以上の素数から始まる隣接素数間隔は常に6以下",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "220以上の素数から始まる隣接素数間隔は常に6以下という条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "6000以下の対象を計算しました。",
+    "finding": "241で観測値10が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_bound",
+      "limit": 6000,
+      "window": 220,
+      "threshold": 6
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_bound",
+        "limit": 6000,
+        "window": 220,
+        "threshold": 6
+      },
+      "statement": "220以上の素数から始まる隣接素数間隔は常に6以下",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 241,
+        "observed_value": 10
+      },
+      "tested_cases": 6,
+      "limit": 6000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "241で観測値10が条件に反しました。"
+    }
+  },
+  "motivation": "遠近法の深度グリッドをヒントに、特定の値以上の領域で隣接素数間隔が狭く保たれる境界条件を検証する。",
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "芸術",
+      "word": "遠近法"
+    },
+    {
+      "domain": "日常",
+      "word": "迷路"
+    },
+    {
+      "domain": "自然",
+      "word": "樹木"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

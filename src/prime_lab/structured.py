@@ -37,7 +37,7 @@ def verify(spec):
     ps = [n for n in range(2, limit + 1) if prime(n)]
     if kind in {"prime_gap_bound", "prime_count_window", "twin_prime_count_window", "prime_count_window_at_most", "prime_gap_lower_bound", "cousin_prime_count_window", "sexy_prime_count_window", "prime_triplet_count_window", "small_gap_count_window"}:
         window, threshold = modulus, residues
-        if kind in {"prime_gap_bound", "prime_gap_lower_bound", "cousin_prime_count_window", "sexy_prime_count_window", "prime_triplet_count_window", "small_gap_count_window"}:
+        if kind in {"prime_gap_bound", "prime_gap_lower_bound"}:
             items = [(a, b-a) for a,b in zip(ps, ps[1:]) if a >= window]
             if kind == "prime_gap_bound":
                 statement = f"{window}以上の素数から始まる隣接素数間隔は常に{threshold}以下"

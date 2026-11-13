@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "run_id": "F-20261113-01",
+  "date": "2026-11-13",
+  "title": "11月13日のAI仮説01からの追試：検証範囲を拡大",
+  "status": "有限範囲で反例発見",
+  "summary": "3000以下では反例がなかったが、10000以下に拡大すると、開始位置4004の幅250の区間で差4の隣接素数ペアは2組となり、3組以上という予想に反例が見つかった。",
+  "hypothesis": "幅250のすべての整数区間には差4の隣接素数ペアが3個以上存在する",
+  "hypothesis_origin": "既存のAI仮説に基づく追試（実験計画はChatGPTが作成・有限計算で検証）",
+  "plain_language": {
+    "question": "前の実験では3000以下で反例がなかった。上限を10000に広げても、幅250の区間に差4の隣接素数ペアが必ず3組以上あるだろうか？",
+    "background": "差4の隣接素数ペアとは、間に別の素数を挟まない2つの素数の差が4である組。",
+    "method": "元の条件（区間幅250、必要な組数3）を維持し、上限を3000から10000に拡大。各整数開始位置から幅250の区間を調べた。",
+    "finding": "開始位置4004の区間[4004,4254)では該当する組が2組だけだった。元の予想はこの有限範囲で否定された。",
+    "limits": "有限計算の結果。新しい数学的発見・学術的新規性を主張しない。",
+    "next_question": "反例が初めて現れる区間の前後では、差4の素数ペアの密度がどう変化するのか？"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "cousin_prime_count_window",
+      "limit": 10000,
+      "window": 250,
+      "threshold": 3
+    },
+    "result": {
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 4004,
+        "observed_value": 2
+      },
+      "tested_cases": 4003,
+      "limit": 10000,
+      "mathematically_proven": false,
+      "novelty": "未確認"
+    },
+    "code": "src/prime_lab/structured.py"
+  },
+  "research_progression": {
+    "previous_run_id": "AI-20261113-01",
+    "previous_result": "有限範囲で反例なし",
+    "selection_reason": "今日のAI実験01で3000以下には反例がなかったため、同じ仮説の検証上限だけを10000に拡大して追試した。",
+    "next_question": "反例の前後の素数ペア密度を調べる。",
+    "link_type": "direct_followup",
+    "note": "前回結果に基づく明示的な追試。AIの内部思考を再現するものではない。"
+  },
+  "provenance": {
+    "generator": "ChatGPT-guided deterministic follow-up",
+    "llm_used": false
+  },
+  "proof": "なし",
+  "prior_art": "未照合"
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261113-21",
+  "date": "2026-11-13",
+  "title": "AI研究仮説 02（未査読）",
+  "status": "有限範囲で反例なし",
+  "summary": "3000以下では反例が見つかりませんでした。証明ではありません。",
+  "hypothesis": "幅180のすべての整数区間には間隔4以下の隣接素数ペアが1組以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅180のすべての整数区間には間隔4以下の隣接素数ペアが1組以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "3000以下の対象を計算しました。",
+    "finding": "3000以下では反例が見つかりませんでした。証明ではありません。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "small_gap_count_window",
+      "limit": 3000,
+      "window": 180,
+      "threshold": 4
+    },
+    "result": {
+      "spec": {
+        "kind": "small_gap_count_window",
+        "limit": 3000,
+        "window": 180,
+        "threshold": 4
+      },
+      "statement": "幅180のすべての整数区間には間隔4以下の隣接素数ペアが1組以上存在する",
+      "status": "有限範囲で反例なし",
+      "counterexample": null,
+      "tested_cases": 2820,
+      "limit": 3000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "3000以下では反例が見つかりませんでした。証明ではありません。"
+    }
+  },
+  "motivation": "日常の迷路における分岐の近接性に着想を得て、指定された整数区間内に非常に狭い間隔（差が4以下）で隣接する素数のペアが複数組観測されるかを検証する",
+  "research_basis": {
+    "sources": [
+      {
+        "title": "有界素数間隔",
+        "url": "https://arxiv.org/abs/1305.6284",
+        "topic": "素数間隔",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類「small_gap_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：日常の迷路における分岐の近接性に着想を得て、指定された整数区間内に非常に狭い間隔（差が4以下）で隣接する素数のペアが複数組観測されるかを検証する",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "research_progression": {
+    "previous_run_id": "AI-20261113-04",
+    "previous_result": "有限範囲で反例なし",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+    "selection_reason": "前回の「幅180のすべての整数区間には間隔6以下の隣接素数ペアが1組以上存在する」は「有限範囲で反例なし」でした。今回は同じ種類の条件について、limit・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+    "link_type": "same_kind_comparison",
+    "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+  },
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "自然",
+      "word": "菌類"
+    },
+    {
+      "domain": "芸術",
+      "word": "和音"
+    },
+    {
+      "domain": "日常",
+      "word": "迷路"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

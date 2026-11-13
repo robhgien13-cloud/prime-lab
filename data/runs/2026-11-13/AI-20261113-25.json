@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261113-25",
+  "date": "2026-11-13",
+  "title": "AI研究仮説 06（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "4004で観測値2が条件に反しました。",
+  "hypothesis": "幅320のすべての整数区間には差4の隣接素数ペアが3個以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅320のすべての整数区間には差4の隣接素数ペアが3個以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "4500以下の対象を計算しました。",
+    "finding": "4004で観測値2が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "cousin_prime_count_window",
+      "limit": 4500,
+      "window": 320,
+      "threshold": 3
+    },
+    "result": {
+      "spec": {
+        "kind": "cousin_prime_count_window",
+        "limit": 4500,
+        "window": 320,
+        "threshold": 3
+      },
+      "statement": "幅320のすべての整数区間には差4の隣接素数ペアが3個以上存在する",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 4004,
+        "observed_value": 2
+      },
+      "tested_cases": 4003,
+      "limit": 4500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "4004で観測値2が条件に反しました。"
+    }
+  },
+  "motivation": "和音の間隔にある一定の緊張感を伴う響きを反映し、差が4であるいとこ素数のペアが特定サイズの窓の中にどれほど頻繁に出現するかを検証する",
+  "research_basis": {
+    "sources": [
+      {
+        "title": "有界素数間隔",
+        "url": "https://arxiv.org/abs/1305.6284",
+        "topic": "素数間隔",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類「cousin_prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：和音の間隔にある一定の緊張感を伴う響きを反映し、差が4であるいとこ素数のペアが特定サイズの窓の中にどれほど頻繁に出現するかを検証する",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "research_progression": {
+    "previous_run_id": "F-20261113-05",
+    "previous_result": "有限範囲で反例発見",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+    "selection_reason": "前回の「幅400のすべての整数区間には差4の隣接素数ペアが3組以上存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・windowを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+    "link_type": "same_kind_comparison",
+    "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+  },
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "自然",
+      "word": "菌類"
+    },
+    {
+      "domain": "芸術",
+      "word": "和音"
+    },
+    {
+      "domain": "日常",
+      "word": "迷路"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261113-20",
+  "date": "2026-11-13",
+  "title": "AI研究仮説 01（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "348で観測値1が条件に反しました。",
+  "hypothesis": "幅220のすべての整数区間には間隔(2,4)の連続素数3個組が2個以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅220のすべての整数区間には間隔(2,4)の連続素数3個組が2個以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "2500以下の対象を計算しました。",
+    "finding": "348で観測値1が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_triplet_count_window",
+      "limit": 2500,
+      "window": 220,
+      "threshold": 2
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_triplet_count_window",
+        "limit": 2500,
+        "window": 220,
+        "threshold": 2
+      },
+      "statement": "幅220のすべての整数区間には間隔(2,4)の連続素数3個組が2個以上存在する",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 348,
+        "observed_value": 1
+      },
+      "tested_cases": 347,
+      "limit": 2500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "348で観測値1が条件に反しました。"
+    }
+  },
+  "motivation": "自然界における菌類の網状の結びつきや和音の複合的な響きを模し、連続素数の間隔パターン(2,4)の3個組が一定の狭い区間内に複数存在するかどうかを検証する",
+  "research_basis": {
+    "sources": [
+      {
+        "title": "有界素数間隔",
+        "url": "https://arxiv.org/abs/1305.6284",
+        "topic": "素数間隔",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類「prime_triplet_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：自然界における菌類の網状の結びつきや和音の複合的な響きを模し、連続素数の間隔パターン(2,4)の3個組が一定の狭い区間内に複数存在するかどうかを検証する",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "research_progression": {
+    "previous_run_id": "AI-20261113-03",
+    "previous_result": "有限範囲で反例発見",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+    "selection_reason": "前回の「幅350のすべての整数区間には間隔(2,4)の連続素数3個組が2個以上存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・windowを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+    "link_type": "same_kind_comparison",
+    "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+  },
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "自然",
+      "word": "菌類"
+    },
+    {
+      "domain": "芸術",
+      "word": "和音"
+    },
+    {
+      "domain": "日常",
+      "word": "迷路"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

@@ -72,5 +72,35 @@ def summarize(root=Path("."), max_records=200):
         "limits": "有限計算は証明でない。新規性は文献との厳密な照合が必要。",
     }
 
+def literature_context(root=Path("."), max_reports=8):
+    """Use stored literature search leads, never infer novelty from search hits."""
+    reports = []
+    for path in sorted((root / "data" / "literature").glob("*.json"), reverse=True):
+        if len(reports) >= max_reports:
+            break
+        try:
+            item = json.loads(path.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        sources = item.get("sources", {})
+        hits = []
+        for provider in ("arxiv", "oeis"):
+            for hit in sources.get(provider, {}).get("hits", [])[:3]:
+                if isinstance(hit, dict):
+                    hits.append({"provider": provider, "id": str(hit.get("id", ""))[:250],
+                                 "title": str(hit.get("title", ""))[:180]})
+        reports.append({"run_id": item.get("run_id"), "query": item.get("query"),
+                        "hits": hits, "novelty_confirmed": False})
+    return {"literature_search_leads": reports,
+            "established_background": [
+                {"topic": "素数定理", "fact": "大きなxに対してπ(x)はx/log(x)に漸近する",
+                 "reference": "https://encyclopediaofmath.org/wiki/Prime_number_theorem"},
+                {"topic": "ディリクレの算術級数定理", "fact": "aとqが互いに素ならa mod qに属する素数は無限にある",
+                 "reference": "https://encyclopediaofmath.org/wiki/Dirichlet_theorem"},
+                {"topic": "有界素数間隔", "fact": "隣接素数間隔がある固定定数以下となる例が無限に存在することは既知",
+                 "reference": "https://arxiv.org/abs/1305.6284"}
+            ],
+            "warning": "参考知識と検索候補。論文本文の精読・同値性・新規性判定は未実施。"}
+
 def prompt_context(root=Path(".")):
-    return json.dumps(summarize(root), ensure_ascii=False, separators=(",", ":"))
+    return json.dumps({"prior_experiments": summarize(root), "prior_research": literature_context(root)}, ensure_ascii=False, separators=(",", ":"))

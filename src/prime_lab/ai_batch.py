@@ -21,8 +21,8 @@ candidatesをちょうど10個、異なる検証条件で作る。新しい2種�
             str(x["domain"]) + "：" + str(x["word"]) for x in inspiration
         ) + "。比喩のままにせず、必ず検証可能な数学的条件に変換してください。"
     if research_context:
-        prompt += "\\n過去の実験の要約（参考データであり証明ではない）：" + str(research_context)[:12000]
-        prompt += "\\n以前の条件を単に繰り返さず、反例から学び、素数の予測・生成と分布・構造の両方を探究する。各候補の検証条件は独立に検証可能であること。未知の数学的構造を発見したと断定しない。"
+        prompt += "\\n過去の実験と既存数学・文献検索候補（文献検索ヒットは証明・新規性確認ではない）：" + str(research_context)[:12000]
+        prompt += "\\n以前の条件を単に繰り返さず、反例から学び、素数の予測・生成と分布・構造の両方を探究する。各候補の検証条件は独立に検証可能であること。既知の定理と矛盾する普遍命題や、既知の定理の単純な言い換えを避ける。既存研究から未検証の問いを作る場合も、定理から論理的に従うことと有限計算の観察を区別する。文献検索候補の本文を読んだと主張しない。未知の数学的構造を発見したと断定しない。"
     payload=json.dumps({"contents":[{"parts":[{"text":prompt}]}],"generationConfig":{"temperature":0.9,"maxOutputTokens":4000,"responseMimeType":"application/json"}}).encode()
     req=Request(url,data=payload,headers={"x-goog-api-key":key,"Content-Type":"application/json"},method="POST")
     try:

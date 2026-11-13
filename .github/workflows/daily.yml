@@ -40,7 +40,7 @@ jobs:
       - name: Generate and verify AI conjectures
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-3.5-flash-lite
+          GEMINI_MODEL: gemini-2.5-flash-lite
         run: python -m src.prime_lab.ai_daily
       - name: Search related literature (best effort)
         continue-on-error: true

@@ -28,7 +28,7 @@ candidatesをちょうど10個、異なる検証条件で作る。新しい2種�
     try:
         with urlopen(req,timeout=90) as response: data=json.loads(response.read(150000))
     except HTTPError as e:
-        raise RuntimeError(f"Gemini API HTTP {e.code} (model={model}); response: {e.read(1200).decode(\'utf-8\', errors=\'replace\')}") from None
+        raise RuntimeError(f"Gemini API HTTP {e.code} (model={model}); response: {e.read(1200).decode('utf-8', errors='replace')}") from None
     except TimeoutError:
         raise RuntimeError("Gemini API timed out") from None
     raw=data["candidates"][0]["content"]["parts"][0]["text"]

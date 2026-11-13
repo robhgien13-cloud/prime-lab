@@ -10,7 +10,7 @@ def propose_batch(count=10, inspiration=None, research_context=None):
     if count!=10: raise ValueError("Batch size must be 10")
     key=os.getenv("GEMINI_API_KEY")
     if not key: raise RuntimeError("GEMINI_API_KEY missing")
-    model=os.getenv("GEMINI_MODEL","gemini-3.5-flash-lite")
+    model=os.getenv("GEMINI_MODEL","gemini-2.5-flash-lite")
     if not re.fullmatch(r"gemini-[a-zA-Z0-9.-]+",model): raise ValueError("Invalid model")
     url=f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     prompt="""あなたは数学の実験計画者。次のJSONオブジェクトのみ返すこと:

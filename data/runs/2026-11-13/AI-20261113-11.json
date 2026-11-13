@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261113-11",
+  "date": "2026-11-13",
+  "title": "AI研究仮説 02（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "31で予想と異なる余り1が出ました。",
+  "hypothesis": "30より大きいすべての素数pについて、pを30で割った余りが[11, 19, 29]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "30より大きいすべての素数pについて、pを30で割った余りが[11, 19, 29]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "6000以下の対象を計算しました。",
+    "finding": "31で予想と異なる余り1が出ました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_residue",
+      "limit": 6000,
+      "modulus": 30,
+      "residues": [
+        11,
+        19,
+        29
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_residue",
+        "limit": 6000,
+        "modulus": 30,
+        "residues": [
+          11,
+          19,
+          29
+        ]
+      },
+      "statement": "30より大きいすべての素数pについて、pを30で割った余りが[11, 19, 29]に含まれる",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 31,
+        "observed_remainder": 1
+      },
+      "tested_cases": 1,
+      "limit": 6000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "31で予想と異なる余り1が出ました。"
+    }
+  },
+  "motivation": "情報の検索プロセスにおけるインデックスの分散に対応するモジュラス30の剰余系における素数の出現頻度の検証",
+  "research_basis": {
+    "sources": [
+      {
+        "title": "ディリクレの算術級数定理",
+        "url": "https://encyclopediaofmath.org/wiki/Dirichlet_theorem",
+        "topic": "素数の合同類",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類「prime_residue」に基づき参考資料を自動選択。仮説提案の動機（未検証）：情報の検索プロセスにおけるインデックスの分散に対応するモジュラス30の剰余系における素数の出現頻度の検証",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "research_progression": {
+    "previous_run_id": "AI-20261113-10",
+    "previous_result": "有限範囲で反例発見",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+    "selection_reason": "前回の「18より大きいすべての素数pについて、pを18で割った余りが[1, 7, 13]に含まれる」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・modulus・residuesを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+    "link_type": "same_kind_comparison",
+    "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+  },
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "科学",
+      "word": "熱"
+    },
+    {
+      "domain": "技術",
+      "word": "検索"
+    },
+    {
+      "domain": "自然",
+      "word": "雪崩"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

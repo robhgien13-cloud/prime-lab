@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261113-18",
+  "date": "2026-11-13",
+  "title": "AI研究仮説 09（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "251で観測値6が条件に反しました。",
+  "hypothesis": "250以上の素数から始まる隣接素数間隔は常に32以上",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "250以上の素数から始まる隣接素数間隔は常に32以上という条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "4500以下の対象を計算しました。",
+    "finding": "251で観測値6が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_lower_bound",
+      "limit": 4500,
+      "window": 250,
+      "threshold": 32
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_lower_bound",
+        "limit": 4500,
+        "window": 250,
+        "threshold": 32
+      },
+      "statement": "250以上の素数から始まる隣接素数間隔は常に32以上",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 251,
+        "observed_value": 6
+      },
+      "tested_cases": 1,
+      "limit": 4500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "251で観測値6が条件に反しました。"
+    }
+  },
+  "motivation": "雪崩の不連続な断絶に比喩される隣接素数間隔の極端な拡大現象の検証",
+  "research_basis": {
+    "sources": [
+      {
+        "title": "有界素数間隔",
+        "url": "https://arxiv.org/abs/1305.6284",
+        "topic": "素数間隔",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類「prime_gap_lower_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：雪崩の不連続な断絶に比喩される隣接素数間隔の極端な拡大現象の検証",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "research_progression": {
+    "previous_run_id": "AI-20261113-07",
+    "previous_result": "有限範囲で反例発見",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+    "selection_reason": "前回の「150以上の素数から始まる隣接素数間隔は常に20以上」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+    "link_type": "same_kind_comparison",
+    "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+  },
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "科学",
+      "word": "熱"
+    },
+    {
+      "domain": "技術",
+      "word": "検索"
+    },
+    {
+      "domain": "自然",
+      "word": "雪崩"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

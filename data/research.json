@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-13T00:53:47.052Z",
-  "cycles": 120,
-  "hypotheses": 115,
-  "refuted": 91,
+  "updated_at": "2026-11-13T00:56:04.324046+00:00",
+  "cycles": 130,
+  "hypotheses": 125,
+  "refuted": 99,
   "verified": 0,
   "records": [
     {
@@ -18,6 +18,12 @@
         "finding": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "llm_used": true,
+        "generator": "LLM"
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -35,6 +41,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -50,6 +62,12 @@
         "finding": "11で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -67,6 +85,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -82,6 +106,12 @@
         "finding": "7で予想と異なる余り3が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -99,6 +129,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -114,6 +150,12 @@
         "finding": "13で予想と異なる余り3が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -131,6 +173,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -146,6 +194,12 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -163,6 +217,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -178,6 +238,12 @@
         "finding": "2000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -195,6 +261,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -210,6 +282,12 @@
         "finding": "1500以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -227,6 +305,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -242,6 +326,12 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -259,6 +349,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -274,6 +370,12 @@
         "finding": "13で予想と異なる余り3が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -291,6 +393,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -306,6 +414,12 @@
         "finding": "6000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -323,6 +437,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -338,6 +458,12 @@
         "finding": "41で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -355,6 +481,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -370,6 +502,12 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -387,6 +525,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -402,6 +546,12 @@
         "finding": "61で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -419,6 +569,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -434,6 +590,12 @@
         "finding": "41で予想と異なる余り7が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -451,6 +613,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -466,6 +634,12 @@
         "finding": "1000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -483,6 +657,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -498,6 +678,12 @@
         "finding": "11で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -515,6 +701,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -530,6 +722,12 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -547,6 +745,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -562,6 +766,12 @@
         "finding": "293で観測値14が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -579,6 +789,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -594,6 +810,12 @@
         "finding": "2478で観測値14が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -611,6 +833,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -626,6 +854,12 @@
         "finding": "113で観測値14が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -643,6 +877,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -658,6 +898,12 @@
         "finding": "2000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -675,6 +921,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -690,6 +942,12 @@
         "finding": "1322で観測値7が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -707,6 +965,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -722,6 +986,12 @@
         "finding": "3000以下では反例が見つかりませんでした。証明ではありません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -739,6 +1009,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -754,6 +1030,12 @@
         "finding": "4500以下では反例が見つかりませんでした。証明ではありません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -771,6 +1053,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -786,6 +1074,12 @@
         "finding": "8000以下では反例が見つかりませんでした。証明ではありません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -803,6 +1097,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -818,6 +1118,12 @@
         "finding": "47で予想と異なる余り5が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -835,6 +1141,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -850,6 +1162,12 @@
         "finding": "11で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -867,6 +1185,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -882,6 +1206,12 @@
         "finding": "2478で観測値14が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -899,6 +1229,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -914,6 +1250,12 @@
         "finding": "13で予想と異なる余り3が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -931,6 +1273,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -946,6 +1294,12 @@
         "finding": "9000以下では反例が見つかりませんでした。証明ではありません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -963,6 +1317,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -978,6 +1338,12 @@
         "finding": "5000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -995,6 +1361,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1010,6 +1382,12 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1027,6 +1405,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1042,6 +1426,12 @@
         "finding": "13で予想と異なる余り3が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1059,6 +1449,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1074,6 +1470,12 @@
         "finding": "181で観測値10が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1091,6 +1493,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1106,6 +1514,12 @@
         "finding": "317で観測値14が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1123,6 +1537,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1138,6 +1558,12 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1155,6 +1581,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1170,6 +1602,12 @@
         "finding": "6000以下では反例が見つかりませんでした。証明ではありません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1187,6 +1625,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1202,6 +1646,12 @@
         "finding": "1308で観測値7が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1219,6 +1669,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1234,6 +1690,12 @@
         "finding": "53で観測値6が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1251,6 +1713,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1266,6 +1734,12 @@
         "finding": "19で予想と異なる余り8が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1283,6 +1757,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1298,6 +1778,12 @@
         "finding": "19で予想と異なる余り2が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1315,6 +1801,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1330,6 +1822,12 @@
         "finding": "29で予想と異なる余り6が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1347,6 +1845,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1362,6 +1866,12 @@
         "finding": "283で観測値10が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1379,6 +1889,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1394,6 +1910,12 @@
         "finding": "7000以下では反例が見つかりませんでした。証明ではありません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1411,6 +1933,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1426,6 +1954,12 @@
         "finding": "3000以下の対象を調べましたが反例はありませんでした。無限に続くことは証明していません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1443,6 +1977,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1458,6 +1998,12 @@
         "finding": "2478で観測値14が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1475,6 +2021,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1490,6 +2042,12 @@
         "finding": "211で観測値12が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1507,6 +2065,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1522,6 +2086,12 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1539,6 +2109,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1554,6 +2130,12 @@
         "finding": "59で予想と異なる余り4が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1571,6 +2153,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1586,6 +2174,12 @@
         "finding": "434で観測値17が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1603,6 +2197,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1618,6 +2218,12 @@
         "finding": "83で予想と異なる余り6が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1635,6 +2241,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1650,6 +2262,12 @@
         "finding": "1610で観測値29が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1667,6 +2285,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1682,6 +2306,12 @@
         "finding": "67で予想と異なる余り2が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1699,6 +2329,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1714,6 +2350,12 @@
         "finding": "3000以下では反例が見つかりませんでした。証明ではありません。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1731,6 +2373,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1746,6 +2394,12 @@
         "finding": "462で観測値1が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1763,6 +2417,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1778,6 +2438,12 @@
         "finding": "3920で観測値4が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1795,6 +2461,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1810,6 +2482,12 @@
         "finding": "151で観測値6が条件に反しました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1827,6 +2505,12 @@
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
       },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
       "origin": "LLM structured candidate (unverified)"
     },
     {
@@ -1842,6 +2526,422 @@
         "finding": "3で予想と異なる余り1が出ました。",
         "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
         "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {},
+      "research_basis": {},
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-10",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 01（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "23で予想と異なる余り5が出ました。",
+      "plain_language": {
+        "question": "18より大きいすべての素数pについて、pを18で割った余りが[1, 7, 13]に含まれるという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "5000以下の対象を計算しました。",
+        "finding": "23で予想と異なる余り5が出ました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261031-09",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「65より大きいすべての素数pについて、pを65で割った余りが[1, 13, 26, 39, 52]に含まれる」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・modulus・residuesを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "ディリクレの算術級数定理",
+            "url": "https://encyclopediaofmath.org/wiki/Dirichlet_theorem",
+            "topic": "素数の合同類",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_residue」に基づき参考資料を自動選択。仮説提案の動機（未検証）：熱エネルギーの拡散状態になぞらえたモジュラス18における非自明な剰余類への素数の偏在構造の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-11",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 02（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "31で予想と異なる余り1が出ました。",
+      "plain_language": {
+        "question": "30より大きいすべての素数pについて、pを30で割った余りが[11, 19, 29]に含まれるという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "6000以下の対象を計算しました。",
+        "finding": "31で予想と異なる余り1が出ました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261113-10",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「18より大きいすべての素数pについて、pを18で割った余りが[1, 7, 13]に含まれる」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・modulus・residuesを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "ディリクレの算術級数定理",
+            "url": "https://encyclopediaofmath.org/wiki/Dirichlet_theorem",
+            "topic": "素数の合同類",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_residue」に基づき参考資料を自動選択。仮説提案の動機（未検証）：情報の検索プロセスにおけるインデックスの分散に対応するモジュラス30の剰余系における素数の出現頻度の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-12",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 03（未査読）",
+      "status": "有限範囲で反例なし",
+      "summary": "4000以下では反例が見つかりませんでした。証明ではありません。",
+      "plain_language": {
+        "question": "幅250のすべての整数区間には素数が18個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "4000以下の対象を計算しました。",
+        "finding": "4000以下では反例が見つかりませんでした。証明ではありません。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261031-10",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅400のすべての整数区間には素数が45個以上存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "素数定理",
+            "url": "https://encyclopediaofmath.org/wiki/Prime_number_theorem",
+            "topic": "素数の分布",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：雪崩のような急激な変動構造を仮定した特定ウィンドウサイズにおける素数密度の下限閾値の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-13",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 04（未査読）",
+      "status": "有限範囲で反例なし",
+      "summary": "4500以下では反例が見つかりませんでした。証明ではありません。",
+      "plain_language": {
+        "question": "幅300のすべての整数区間には素数が22個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "4500以下の対象を計算しました。",
+        "finding": "4500以下では反例が見つかりませんでした。証明ではありません。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261113-12",
+        "previous_result": "有限範囲で反例なし",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅250のすべての整数区間には素数が18個以上存在する」は「有限範囲で反例なし」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "素数定理",
+            "url": "https://encyclopediaofmath.org/wiki/Prime_number_theorem",
+            "topic": "素数の分布",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：熱伝導の局所平衡状態に比喩される連続区間内の素数カウントの揺らぎの境界の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-14",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 05（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "2802で観測値3が条件に反しました。",
+      "plain_language": {
+        "question": "幅350のすべての整数区間には双子素数の組が4個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "3500以下の対象を計算しました。",
+        "finding": "2802で観測値3が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": null,
+        "previous_result": null,
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "同じ種類の先行実験記録がないため、新しい検証系列として開始します。AIの内部思考を再現したものではありません。",
+        "link_type": "new_series",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「twin_prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：検索語のヒット率構造を模した双子素数ペアの局所的密集度に関する検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-15",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 06（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "2802で観測値4が条件に反しました。",
+      "plain_language": {
+        "question": "幅400のすべての整数区間には双子素数の組が5個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "5000以下の対象を計算しました。",
+        "finding": "2802で観測値4が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261113-14",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅350のすべての整数区間には双子素数の組が4個以上存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「twin_prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：雪崩の連鎖的発生になぞらえた双子素数の空間的クラスタリング現象の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-16",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 07（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "181で観測値10が条件に反しました。",
+      "plain_language": {
+        "question": "150以上の素数から始まる隣接素数間隔は常に6以下という条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "3000以下の対象を計算しました。",
+        "finding": "181で観測値10が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261031-08",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「380以上の素数から始まる隣接素数間隔は常に10以下」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_gap_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：熱の収束現象に由来する局所的な素数間隔の圧縮限界の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-17",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 08（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "211で観測値12が条件に反しました。",
+      "plain_language": {
+        "question": "200以上の素数から始まる隣接素数間隔は常に8以下という条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "4000以下の対象を計算しました。",
+        "finding": "211で観測値12が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261113-16",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「150以上の素数から始まる隣接素数間隔は常に6以下」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_gap_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：検索クエリの最短パス探索に対応する素数間隔の上界閾値の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-18",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 09（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "251で観測値6が条件に反しました。",
+      "plain_language": {
+        "question": "250以上の素数から始まる隣接素数間隔は常に32以上という条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "4500以下の対象を計算しました。",
+        "finding": "251で観測値6が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261113-07",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「150以上の素数から始まる隣接素数間隔は常に20以上」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_gap_lower_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：雪崩の不連続な断絶に比喩される隣接素数間隔の極端な拡大現象の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261113-19",
+      "date": "2026-11-13",
+      "title": "AI研究仮説 10（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "307で観測値4が条件に反しました。",
+      "plain_language": {
+        "question": "300以上の素数から始まる隣接素数間隔は常に36以上という条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "5500以下の対象を計算しました。",
+        "finding": "307で観測値4が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261113-18",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「250以上の素数から始まる隣接素数間隔は常に32以上」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_gap_lower_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：熱平衡状態からの局所的乖離を示す素数間の巨大なギャップの存在確率の検証",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
       },
       "origin": "LLM structured candidate (unverified)"
     },
@@ -1859,7 +2959,6 @@
         "limits": "有限計算の結果。新しい数学的発見・学術的新規性を主張しない。",
         "next_question": "反例が初めて現れる区間の前後では、差4の素数ペアの密度がどう変化するのか？"
       },
-      "origin": "既存のAI仮説に基づく追試（実験計画はChatGPTが作成・有限計算で検証）",
       "research_progression": {
         "previous_run_id": "AI-20261113-01",
         "previous_result": "有限範囲で反例なし",
@@ -1868,10 +2967,12 @@
         "link_type": "direct_followup",
         "note": "前回結果に基づく明示的な追試。AIの内部思考を再現するものではない。"
       },
+      "research_basis": {},
       "provenance": {
         "generator": "ChatGPT-guided deterministic follow-up",
         "llm_used": false
-      }
+      },
+      "origin": "既存のAI仮説に基づく追試（実験計画はChatGPTが作成・有限計算で検証）"
     },
     {
       "id": "F-20261113-02",
@@ -1887,7 +2988,6 @@
         "limits": "有限範囲の検証。数学的証明や学術的新規性の確認ではない。",
         "next_question": "幅500で4組以上に条件を強めるとどうなるか？"
       },
-      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試",
       "research_progression": {
         "previous_run_id": "F-20261113-01",
         "previous_result": "幅250・3組の予想は4004で反例が見つかった",
@@ -1896,10 +2996,12 @@
         "link_type": "direct_followup",
         "note": "前回結果をもとに明示的に条件を変更した追試。AIの内部思考を再現したものではない。"
       },
+      "research_basis": {},
       "provenance": {
         "generator": "ChatGPT-guided deterministic follow-up",
         "llm_used": false
-      }
+      },
+      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試"
     },
     {
       "id": "F-20261113-03",
@@ -1915,7 +3017,6 @@
         "limits": "有限範囲の検証。数学的証明や学術的新規性の確認ではない。",
         "next_question": "3組という条件に戻したとき、幅500より短い幅450でも維持できるか？"
       },
-      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試",
       "research_progression": {
         "previous_run_id": "F-20261113-02",
         "previous_result": "幅500・3組は10000以下で反例なし",
@@ -1924,10 +3025,12 @@
         "link_type": "direct_followup",
         "note": "前回結果をもとに明示的に条件を変更した追試。AIの内部思考を再現したものではない。"
       },
+      "research_basis": {},
       "provenance": {
         "generator": "ChatGPT-guided deterministic follow-up",
         "llm_used": false
-      }
+      },
+      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試"
     },
     {
       "id": "F-20261113-04",
@@ -1943,7 +3046,6 @@
         "limits": "有限範囲の検証。数学的証明や学術的新規性の確認ではない。",
         "next_question": "幅400と450の境界付近で、3組が保証される最小幅を探索できるか？"
       },
-      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試",
       "research_progression": {
         "previous_run_id": "F-20261113-03",
         "previous_result": "幅500・4組は3944で反例が見つかった",
@@ -1952,10 +3054,12 @@
         "link_type": "direct_followup",
         "note": "前回結果をもとに明示的に条件を変更した追試。AIの内部思考を再現したものではない。"
       },
+      "research_basis": {},
       "provenance": {
         "generator": "ChatGPT-guided deterministic follow-up",
         "llm_used": false
-      }
+      },
+      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試"
     },
     {
       "id": "F-20261113-05",
@@ -1971,7 +3075,6 @@
         "limits": "有限範囲の計算。参考文献はテーマの関連性による自動割当で、論文本文との照合は未実施。",
         "next_question": "幅400と450の間で3組を満たす境界を探索する。"
       },
-      "origin": "既存実験からのChatGPT計画の追試（文献関連付け表示の試験）",
       "research_progression": {
         "previous_run_id": "F-20261113-04",
         "previous_result": "有限範囲で反例なし",
@@ -1995,7 +3098,8 @@
       "provenance": {
         "generator": "ChatGPT-guided deterministic follow-up",
         "llm_used": false
-      }
+      },
+      "origin": "既存実験からのChatGPT計画の追試（文献関連付け表示の試験）"
     }
   ]
 }

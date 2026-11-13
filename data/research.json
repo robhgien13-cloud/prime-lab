@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-13T00:44:14.910Z",
-  "cycles": 116,
+  "updated_at": "2026-11-13T00:50:33.177Z",
+  "cycles": 119,
   "hypotheses": 115,
-  "refuted": 89,
+  "refuted": 90,
   "verified": 0,
   "records": [
     {
@@ -1867,6 +1867,90 @@
         "next_question": "反例の前後の素数ペア密度を調べる。",
         "link_type": "direct_followup",
         "note": "前回結果に基づく明示的な追試。AIの内部思考を再現するものではない。"
+      },
+      "provenance": {
+        "generator": "ChatGPT-guided deterministic follow-up",
+        "llm_used": false
+      }
+    },
+    {
+      "id": "F-20261113-02",
+      "date": "2026-11-13",
+      "title": "連続追試02：幅500・3組",
+      "status": "有限範囲で反例なし",
+      "summary": "10000以下の全対象区間では反例が見つからなかった（数学的証明ではない）。",
+      "plain_language": {
+        "question": "幅500のすべての整数区間に差4の隣接素数ペアが3組以上あるか？",
+        "background": "差4の隣接素数ペアとは、連続する2つの素数の差が4である組。",
+        "method": "素数10000以下を列挙し、開始位置2から9501までの幅500の整数区間を順に検査。",
+        "finding": "10000以下の全対象区間では反例が見つからなかった（数学的証明ではない）。",
+        "limits": "有限範囲の検証。数学的証明や学術的新規性の確認ではない。",
+        "next_question": "幅500で4組以上に条件を強めるとどうなるか？"
+      },
+      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試",
+      "research_progression": {
+        "previous_run_id": "F-20261113-01",
+        "previous_result": "幅250・3組の予想は4004で反例が見つかった",
+        "selection_reason": "区間幅250では3組を保証できなかったため、必要組数を3のまま幅を500へ広げる。",
+        "next_question": "幅500で4組以上に条件を強めるとどうなるか？",
+        "link_type": "direct_followup",
+        "note": "前回結果をもとに明示的に条件を変更した追試。AIの内部思考を再現したものではない。"
+      },
+      "provenance": {
+        "generator": "ChatGPT-guided deterministic follow-up",
+        "llm_used": false
+      }
+    },
+    {
+      "id": "F-20261113-03",
+      "date": "2026-11-13",
+      "title": "連続追試03：幅500・4組",
+      "status": "有限範囲で反例発見",
+      "summary": "開始位置3944の区間[3944,4444)では差4の隣接素数ペアが3組しかなく、4組以上という条件の反例が見つかった。",
+      "plain_language": {
+        "question": "幅500のすべての整数区間に差4の隣接素数ペアが4組以上あるか？",
+        "background": "差4の隣接素数ペアとは、連続する2つの素数の差が4である組。",
+        "method": "素数10000以下を列挙し、開始位置2から9501までの幅500の整数区間を順に検査。",
+        "finding": "開始位置3944の区間[3944,4444)では差4の隣接素数ペアが3組しかなく、4組以上という条件の反例が見つかった。",
+        "limits": "有限範囲の検証。数学的証明や学術的新規性の確認ではない。",
+        "next_question": "3組という条件に戻したとき、幅500より短い幅450でも維持できるか？"
+      },
+      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試",
+      "research_progression": {
+        "previous_run_id": "F-20261113-02",
+        "previous_result": "幅500・3組は10000以下で反例なし",
+        "selection_reason": "幅500では3組を満たしたので、同じ区間幅のまま必要組数を4に増やして条件を強める。",
+        "next_question": "3組という条件に戻したとき、幅500より短い幅450でも維持できるか？",
+        "link_type": "direct_followup",
+        "note": "前回結果をもとに明示的に条件を変更した追試。AIの内部思考を再現したものではない。"
+      },
+      "provenance": {
+        "generator": "ChatGPT-guided deterministic follow-up",
+        "llm_used": false
+      }
+    },
+    {
+      "id": "F-20261113-04",
+      "date": "2026-11-13",
+      "title": "連続追試04：幅450・3組",
+      "status": "有限範囲で反例なし",
+      "summary": "10000以下の全対象区間では反例が見つからなかった（数学的証明ではない）。",
+      "plain_language": {
+        "question": "幅450のすべての整数区間に差4の隣接素数ペアが3組以上あるか？",
+        "background": "差4の隣接素数ペアとは、連続する2つの素数の差が4である組。",
+        "method": "素数10000以下を列挙し、開始位置2から9551までの幅450の整数区間を順に検査。",
+        "finding": "10000以下の全対象区間では反例が見つからなかった（数学的証明ではない）。",
+        "limits": "有限範囲の検証。数学的証明や学術的新規性の確認ではない。",
+        "next_question": "幅400と450の境界付近で、3組が保証される最小幅を探索できるか？"
+      },
+      "origin": "11月13日のAI仮説から派生したChatGPT計画の決定論的追試",
+      "research_progression": {
+        "previous_run_id": "F-20261113-03",
+        "previous_result": "幅500・4組は3944で反例が見つかった",
+        "selection_reason": "4組という強い条件は反例が出た。3組に戻し、幅500より狭い450でも反例がないかを調べる。",
+        "next_question": "幅400と450の境界付近で、3組が保証される最小幅を探索できるか？",
+        "link_type": "direct_followup",
+        "note": "前回結果をもとに明示的に条件を変更した追試。AIの内部思考を再現したものではない。"
       },
       "provenance": {
         "generator": "ChatGPT-guided deterministic follow-up",

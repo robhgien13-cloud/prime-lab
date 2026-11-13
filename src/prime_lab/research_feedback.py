@@ -102,5 +102,37 @@ def literature_context(root=Path("."), max_reports=8):
             ],
             "warning": "参考知識と検索候補。論文本文の精読・同値性・新規性判定は未実施。"}
 
+
+# Curated background references; matching by experiment family is not proof of use.
+BACKGROUND_BY_KIND = {
+    "prime_residue": ("ディリクレの算術級数定理", "https://encyclopediaofmath.org/wiki/Dirichlet_theorem", "素数の合同類"),
+    "prime_last_digit": ("ディリクレの算術級数定理", "https://encyclopediaofmath.org/wiki/Dirichlet_theorem", "素数の合同類"),
+    "prime_gap_divisible": ("素数間隔の研究", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+    "prime_gap_bound": ("有界素数間隔", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+    "prime_gap_lower_bound": ("有界素数間隔", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+    "prime_count_window": ("素数定理", "https://encyclopediaofmath.org/wiki/Prime_number_theorem", "素数の分布"),
+    "prime_count_window_at_most": ("素数定理", "https://encyclopediaofmath.org/wiki/Prime_number_theorem", "素数の分布"),
+    "twin_prime_count_window": ("有界素数間隔", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+    "cousin_prime_count_window": ("有界素数間隔", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+    "sexy_prime_count_window": ("有界素数間隔", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+    "prime_triplet_count_window": ("有界素数間隔", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+    "small_gap_count_window": ("有界素数間隔", "https://arxiv.org/abs/1305.6284", "素数間隔"),
+}
+
+def reference_for_experiment(spec, motivation=""):
+    """Attach an auditable topic-matched reference, not an invented LLM citation."""
+    kind = spec.get("kind") if isinstance(spec, dict) else None
+    item = BACKGROUND_BY_KIND.get(kind)
+    if item is None:
+        return {"sources": [], "selection_basis": "対応する参考文献なし",
+                "citation_status": "未照合"}
+    title, url, topic = item
+    return {"sources": [{"title": title, "url": url, "topic": topic,
+                         "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"}],
+            "selection_basis": "検証の種類「" + str(kind) + "」に基づき参考資料を自動選択。"
+                 + "仮説提案の動機（未検証）：" + str(motivation)[:350],
+            "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+            "model_used_source": "不明"}
+
 def prompt_context(root=Path(".")):
     return json.dumps({"prior_experiments": summarize(root), "prior_research": literature_context(root)}, ensure_ascii=False, separators=(",", ":"))

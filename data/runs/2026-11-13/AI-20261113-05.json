@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261113-05",
+  "date": "2026-11-13",
+  "title": "AI研究仮説 05（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "3920で観測値4が条件に反しました。",
+  "hypothesis": "幅400のすべての整数区間には差4の隣接素数ペアが5個以上存在する",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "幅400のすべての整数区間には差4の隣接素数ペアが5個以上存在するという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "5000以下の対象を計算しました。",
+    "finding": "3920で観測値4が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "cousin_prime_count_window",
+      "limit": 5000,
+      "window": 400,
+      "threshold": 5
+    },
+    "result": {
+      "spec": {
+        "kind": "cousin_prime_count_window",
+        "limit": 5000,
+        "window": 400,
+        "threshold": 5
+      },
+      "statement": "幅400のすべての整数区間には差4の隣接素数ペアが5個以上存在する",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 3920,
+        "observed_value": 4
+      },
+      "tested_cases": 3919,
+      "limit": 5000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "3920で観測値4が条件に反しました。"
+    }
+  },
+  "motivation": "振動系の干渉現象をヒントに、いとこ素数のペアが広めのウィンドウでどのように分布するか検証する。",
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "技術",
+      "word": "回路"
+    },
+    {
+      "domain": "科学",
+      "word": "振動"
+    },
+    {
+      "domain": "日常",
+      "word": "階段"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

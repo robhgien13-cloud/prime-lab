@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261113-07",
+  "date": "2026-11-13",
+  "title": "AI研究仮説 07（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "151で観測値6が条件に反しました。",
+  "hypothesis": "150以上の素数から始まる隣接素数間隔は常に20以上",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "150以上の素数から始まる隣接素数間隔は常に20以上という条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "3000以下の対象を計算しました。",
+    "finding": "151で観測値6が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_lower_bound",
+      "limit": 3000,
+      "window": 150,
+      "threshold": 20
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_lower_bound",
+        "limit": 3000,
+        "window": 150,
+        "threshold": 20
+      },
+      "statement": "150以上の素数から始まる隣接素数間隔は常に20以上",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 151,
+        "observed_value": 6
+      },
+      "tested_cases": 1,
+      "limit": 3000,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "151で観測値6が条件に反しました。"
+    }
+  },
+  "motivation": "回路における抵抗の閾値を比喩とし、指定位置以降の隣接素数間隔が一定値以上を保つ現象を検証する。",
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "技術",
+      "word": "回路"
+    },
+    {
+      "domain": "科学",
+      "word": "振動"
+    },
+    {
+      "domain": "日常",
+      "word": "階段"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

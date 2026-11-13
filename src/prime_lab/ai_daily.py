@@ -4,7 +4,7 @@ from datetime import datetime,timezone
 from pathlib import Path
 from .ai_batch import propose_batch
 from .inspiration import pick_random
-from .research_feedback import prompt_context
+from .research_feedback import prompt_context, reference_for_experiment
 from .llm_structured import experiment_candidate
 from .pipeline import run as rebuild
 
@@ -59,6 +59,7 @@ def run(day=None,root=Path("."),candidates=None):
             "plain_language":checked["plain_language"],
             "experiment":{"spec":spec,"result":finite},
             "motivation":candidate["motivation"],
+            "research_basis":reference_for_experiment(spec, candidate["motivation"]),
             "research_progression":{"previous_run_id":parent.get("run_id") if parent else None,
                 "previous_result":parent.get("status") if parent else None,
                 "next_question":checked["plain_language"].get("next_question"),

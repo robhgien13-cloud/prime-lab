@@ -75,6 +75,7 @@ def run(day, root=Path("."), limit=1000, create_templates=True):
             "status": r["status"], "summary": r["summary"],
             "plain_language": r.get("plain_language", {}),
             "research_progression": r.get("research_progression", {}),
+            "research_basis": r.get("research_basis", {}),
             "provenance": r.get("provenance", {}),
             "origin": r.get("hypothesis_origin", "不明"),
         } for r in public_records],

@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "run_id": "F-20261113-05",
+  "date": "2026-11-13",
+  "title": "出典付き研究プロセス試験：幅400の差4素数ペア",
+  "status": "有限範囲で反例発見",
+  "summary": "幅450・3組では反例がなかったため幅400へ縮小。開始位置4004の区間[4004,4404)で差4の隣接素数ペアは2組で、3組以上という予想に反例。",
+  "hypothesis": "幅400のすべての整数区間には差4の隣接素数ペアが3組以上存在する",
+  "hypothesis_origin": "既存実験からのChatGPT計画の追試（文献関連付け表示の試験）",
+  "plain_language": {
+    "question": "幅450で3組以上という条件を、幅400まで狭めても維持できるか？",
+    "background": "素数間隔の研究は、個々の短区間で差4のペアが必ず一定数あることを直接保証しない。",
+    "method": "10000以下の素数を列挙し、幅400の各整数区間を検査した。",
+    "finding": "開始位置4004の区間で2組しかなく反例を確認。",
+    "limits": "有限範囲の計算。参考文献はテーマの関連性による自動割当で、論文本文との照合は未実施。",
+    "next_question": "幅400と450の間で3組を満たす境界を探索する。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "cousin_prime_count_window",
+      "limit": 10000,
+      "window": 400,
+      "threshold": 3
+    },
+    "result": {
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 4004,
+        "observed_value": 2
+      },
+      "limit": 10000,
+      "mathematically_proven": false,
+      "novelty": "未確認"
+    }
+  },
+  "research_progression": {
+    "previous_run_id": "F-20261113-04",
+    "previous_result": "有限範囲で反例なし",
+    "selection_reason": "幅450で反例なしという前回結果を受け、区間幅を400に縮めて反例の有無を調べた。",
+    "link_type": "direct_followup",
+    "next_question": "幅400と450の間の境界を探索する。"
+  },
+  "research_basis": {
+    "sources": [
+      {
+        "title": "有界素数間隔",
+        "url": "https://arxiv.org/abs/1305.6284",
+        "topic": "素数間隔",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類 cousin_prime_count_window に基づき参考資料を自動選択。前回結果から幅400への縮小を決定。",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "provenance": {
+    "generator": "ChatGPT-guided deterministic follow-up",
+    "llm_used": false
+  },
+  "proof": "なし",
+  "prior_art": "未照合"
+}

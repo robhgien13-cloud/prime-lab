@@ -1,0 +1,50 @@
+{
+  "run_id": "AI-20261114-07",
+  "query": "prime number distribution",
+  "status": "未確認",
+  "novelty_confirmed": false,
+  "sources": {
+    "oeis": {
+      "url": "https://oeis.org/search?q=prime+number+distribution&fmt=json",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "A135764",
+          "title": "Distribute the natural numbers in columns based on the occurrence of \"2\" in each prime factorization; square array A(row,col) = 2^(row-1) * ((2*col)-1), read by descending antidiag"
+        },
+        {
+          "id": "A079025",
+          "title": "Triangular array read by rows: column sums of frequency distributions associated with number of divisors of least prime signatures."
+        },
+        {
+          "id": "A139101",
+          "title": "Numbers that show the distribution of prime numbers up to the n-th prime minus 1, using \"0\" for primes and \"1\" for nonprime numbers."
+        }
+      ]
+    },
+    "arxiv": {
+      "url": "https://export.arxiv.org/api/query?search_query=all%3A%22prime+number+distribution%22&start=0&max_results=3",
+      "state": "検索済み",
+      "hits": [
+        {
+          "id": "http://arxiv.org/abs/math/9811096v1",
+          "title": "On the nonasymptotic prime number distribution"
+        },
+        {
+          "id": "http://arxiv.org/abs/0801.4049v1",
+          "title": "About the logic of the prime number distribution"
+        },
+        {
+          "id": "http://arxiv.org/abs/2008.03608v1",
+          "title": "A heuristic study of prime number distribution"
+        }
+      ]
+    },
+    "zbmath": {
+      "url": "https://zbmath.org/?q=prime%20number%20distribution",
+      "state": "検索リンクのみ・自動取得未実装",
+      "hits": []
+    }
+  },
+  "caveat": "検索結果は関連文献の候補に過ぎず、同値性や新規性の判定ではない。"
+}

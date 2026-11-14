@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261114-05",
+  "date": "2026-11-14",
+  "title": "AI研究仮説 05（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "307で観測値4が条件に反しました。",
+  "hypothesis": "300以上の素数から始まる隣接素数間隔は常に45以上",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "300以上の素数から始まる隣接素数間隔は常に45以上という条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "2500以下の対象を計算しました。",
+    "finding": "307で観測値4が条件に反しました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_lower_bound",
+      "limit": 2500,
+      "window": 300,
+      "threshold": 45
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_lower_bound",
+        "limit": 2500,
+        "window": 300,
+        "threshold": 45
+      },
+      "statement": "300以上の素数から始まる隣接素数間隔は常に45以上",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 307,
+        "observed_value": 4
+      },
+      "tested_cases": 1,
+      "limit": 2500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "307で観測値4が条件に反しました。"
+    }
+  },
+  "motivation": "暗号の安全性評価における素数間の巨大な隙間に着目し、指定した大きさ以上の素数から始まる隣接間隔が下限値を超えて広がる現象の分布を検証する。",
+  "research_basis": {
+    "sources": [
+      {
+        "title": "有界素数間隔",
+        "url": "https://arxiv.org/abs/1305.6284",
+        "topic": "素数間隔",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類「prime_gap_lower_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：暗号の安全性評価における素数間の巨大な隙間に着目し、指定した大きさ以上の素数から始まる隣接間隔が下限値を超えて広がる現象の分布を検証する。",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "research_progression": {
+    "previous_run_id": "AI-20261113-27",
+    "previous_result": "有限範囲で反例発見",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+    "selection_reason": "前回の「280以上の素数から始まる隣接素数間隔は常に40以上」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+    "link_type": "same_kind_comparison",
+    "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+  },
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "日常",
+      "word": "鍵"
+    },
+    {
+      "domain": "技術",
+      "word": "暗号"
+    },
+    {
+      "domain": "芸術",
+      "word": "舞踊"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

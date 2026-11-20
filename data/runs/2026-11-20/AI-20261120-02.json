@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "run_id": "AI-20261120-02",
+  "date": "2026-11-20",
+  "title": "AI研究仮説 02（未査読）",
+  "status": "有限範囲で反例発見",
+  "summary": "3で予想と異なる余り1が出ました。",
+  "hypothesis": "隣り合う素数の差を14で割った余りが[2, 4, 6]に含まれる",
+  "hypothesis_origin": "LLM structured candidate (unverified)",
+  "plain_language": {
+    "question": "隣り合う素数の差を14で割った余りが[2, 4, 6]に含まれるという条件を調べました。",
+    "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+    "method": "3500以下の対象を計算しました。",
+    "finding": "3で予想と異なる余り1が出ました。",
+    "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+  },
+  "experiment": {
+    "spec": {
+      "kind": "prime_gap_divisible",
+      "limit": 3500,
+      "modulus": 14,
+      "residues": [
+        2,
+        4,
+        6
+      ]
+    },
+    "result": {
+      "spec": {
+        "kind": "prime_gap_divisible",
+        "limit": 3500,
+        "modulus": 14,
+        "residues": [
+          2,
+          4,
+          6
+        ]
+      },
+      "statement": "隣り合う素数の差を14で割った余りが[2, 4, 6]に含まれる",
+      "status": "有限範囲で反例発見",
+      "counterexample": {
+        "number": 3,
+        "observed_remainder": 1
+      },
+      "tested_cases": 1,
+      "limit": 3500,
+      "mathematically_proven": false,
+      "novelty": "未確認",
+      "beginner_explanation": "3で予想と異なる余り1が出ました。"
+    }
+  },
+  "motivation": "言語の文法規則における音節の離散的な間隔の制約に対応させ、隣接素数間隔が法14で特定の剰余を持つ現象の出現頻度を検証する。",
+  "research_basis": {
+    "sources": [
+      {
+        "title": "素数間隔の研究",
+        "url": "https://arxiv.org/abs/1305.6284",
+        "topic": "素数間隔",
+        "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+      }
+    ],
+    "selection_basis": "検証の種類「prime_gap_divisible」に基づき参考資料を自動選択。仮説提案の動機（未検証）：言語の文法規則における音節の離散的な間隔の制約に対応させ、隣接素数間隔が法14で特定の剰余を持つ現象の出現頻度を検証する。",
+    "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+    "model_used_source": "不明"
+  },
+  "research_progression": {
+    "previous_run_id": "AI-20261117-01",
+    "previous_result": "有限範囲で反例発見",
+    "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+    "selection_reason": "前回の「隣り合う素数の差を12で割った余りが[2, 6, 10]に含まれる」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・modulus・residuesを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+    "link_type": "same_kind_comparison",
+    "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+  },
+  "research_direction": "予測・生成と分布・構造の規則性を探索",
+  "inspiration": [
+    {
+      "domain": "技術",
+      "word": "ロボット"
+    },
+    {
+      "domain": "社会",
+      "word": "言語"
+    },
+    {
+      "domain": "芸術",
+      "word": "彫刻"
+    }
+  ],
+  "proof": "なし",
+  "prior_art": "未照合",
+  "novelty_status": "過去の同一条件なし・学術的新規性は未確認",
+  "provenance": {
+    "generator": "Gemini API batch",
+    "llm_used": true
+  }
+}

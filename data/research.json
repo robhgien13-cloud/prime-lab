@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-20T08:39:24.362811+00:00",
-  "cycles": 198,
-  "hypotheses": 193,
-  "refuted": 150,
+  "updated_at": "2026-11-21T08:20:17.052566+00:00",
+  "cycles": 208,
+  "hypotheses": 203,
+  "refuted": 158,
   "verified": 0,
   "records": [
     {
@@ -5880,6 +5880,416 @@
           }
         ],
         "selection_basis": "検証の種類「small_gap_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：彫刻の表面に表れる微細な凹凸パターンの反復に倣い、幅280の区間内における極小な隣接素数間隔の集積度を検証する。",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-01",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 01（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "3で予想と異なる余り1が出ました。",
+      "plain_language": {
+        "question": "隣り合う素数の差を18で割った余りが[2, 8, 14]に含まれるという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "1200以下の対象を計算しました。",
+        "finding": "3で予想と異なる余り1が出ました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-02",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「隣り合う素数の差を14で割った余りが[2, 4, 6]に含まれる」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・modulus・residuesを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "素数間隔の研究",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_gap_divisible」に基づき参考資料を自動選択。仮説提案の動機（未検証）：社会の法律の制限や秩序にならい、隣接素数間隔が特定の法のもとで特定の剰余に制限されるかを検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-02",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 02（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "31で予想と異なる余り1が出ました。",
+      "plain_language": {
+        "question": "30より大きいすべての素数pについて、pを30で割った余りが[7, 13, 19]に含まれるという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "1500以下の対象を計算しました。",
+        "finding": "31で予想と異なる余り1が出ました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-01",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「42より大きいすべての素数pについて、pを42で割った余りが[1, 11, 13, 17, 23, 25, 31, 37, 41]に含まれる」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・modulus・residuesを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "ディリクレの算術級数定理",
+            "url": "https://encyclopediaofmath.org/wiki/Dirichlet_theorem",
+            "topic": "素数の合同類",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_residue」に基づき参考資料を自動選択。仮説提案の動機（未検証）：科学の重力が物体を引き寄せるように、素数が特定の非自明な剰余類に強く偏って分布するか検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-03",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 03（未査読）",
+      "status": "有限範囲で反例なし",
+      "summary": "2000以下では反例が見つかりませんでした。証明ではありません。",
+      "plain_language": {
+        "question": "幅120のすべての整数区間には素数が10個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "2000以下の対象を計算しました。",
+        "finding": "2000以下では反例が見つかりませんでした。証明ではありません。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-03",
+        "previous_result": "有限範囲で反例なし",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅180のすべての整数区間には素数が15個以上存在する」は「有限範囲で反例なし」でした。今回は同じ種類の条件について、window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "素数定理",
+            "url": "https://encyclopediaofmath.org/wiki/Prime_number_theorem",
+            "topic": "素数の分布",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：自然の潮汐が周期的な干満を生むように、一定の整数区間内で素数の出現頻度が下限thresholdを満たし続けるか検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-04",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 04（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "600で観測値3が条件に反しました。",
+      "plain_language": {
+        "question": "幅180のすべての整数区間には双子素数の組が4個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "2500以下の対象を計算しました。",
+        "finding": "600で観測値3が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-04",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅250のすべての整数区間には双子素数の組が6個以上存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「twin_prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：社会組織のペア形成に着想を得て、指定された窓幅の中で双子素数ペアが一定数以上現れる局所的構造を検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-05",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 05（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "523で観測値18が条件に反しました。",
+      "plain_language": {
+        "question": "150以上の素数から始まる隣接素数間隔は常に14以下という条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "1800以下の対象を計算しました。",
+        "finding": "523で観測値18が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-06",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「220以上の素数から始まる隣接素数間隔は常に12以下」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_gap_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：重力場における粒子の近接限界のように、特定の位置以降の隣接素数間隔が一定の閾値以下に収まる現象を検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-06",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 06（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "2で観測値34が条件に反しました。",
+      "plain_language": {
+        "question": "幅140のすべての整数区間には素数が3個以下存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "2200以下の対象を計算しました。",
+        "finding": "2で観測値34が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-05",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅190のすべての整数区間には素数が3個以下存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・windowを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "素数定理",
+            "url": "https://encyclopediaofmath.org/wiki/Prime_number_theorem",
+            "topic": "素数の分布",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_count_window_at_most」に基づき参考資料を自動選択。仮説提案の動機（未検証）：法律による規制区域の設定にならい、特定の区間内で素数の数が指定された上限値以下に抑えられるまばらな領域の存在を検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-07",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 07（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "211で観測値12が条件に反しました。",
+      "plain_language": {
+        "question": "200以上の素数から始まる隣接素数間隔は常に38以上という条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "3000以下の対象を計算しました。",
+        "finding": "211で観測値12が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-07",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「210以上の素数から始まる隣接素数間隔は常に36以上」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_gap_lower_bound」に基づき参考資料を自動選択。仮説提案の動機（未検証）：潮汐の引き潮のように、素数が極端に疎になる領域で隣接素数間隔が特定の閾値以上を維持する下限構造を検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-08",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 08（未査読）",
+      "status": "有限範囲で反例なし",
+      "summary": "2400以下では反例が見つかりませんでした。証明ではありません。",
+      "plain_language": {
+        "question": "幅220のすべての整数区間には間隔6以下の隣接素数ペアが1組以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "2400以下の対象を計算しました。",
+        "finding": "2400以下では反例が見つかりませんでした。証明ではありません。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-10",
+        "previous_result": "有限範囲で反例なし",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅280のすべての整数区間には間隔4以下の隣接素数ペアが1組以上存在する」は「有限範囲で反例なし」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「small_gap_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：社会的なコミュニティの密集度を模し、区間内に極めて近接した素数ペアが一定数以上密集するパターンを検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-09",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 09（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "348で観測値1が条件に反しました。",
+      "plain_language": {
+        "question": "幅260のすべての整数区間には間隔(2,4)の連続素数3個組が2個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "3500以下の対象を計算しました。",
+        "finding": "348で観測値1が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261119-06",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅400のすべての整数区間には間隔(2,4)の連続素数3個組が3個以上存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「prime_triplet_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：自然界の三点平衡構造に着想を得て、連続する素数の間隔が(2,4)である組が局所的に複数存在するか検証する",
+        "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
+        "model_used_source": "不明"
+      },
+      "provenance": {
+        "generator": "Gemini API batch",
+        "llm_used": true
+      },
+      "origin": "LLM structured candidate (unverified)"
+    },
+    {
+      "id": "AI-20261121-10",
+      "date": "2026-11-21",
+      "title": "AI研究仮説 10（未査読）",
+      "status": "有限範囲で反例発見",
+      "summary": "500で観測値3が条件に反しました。",
+      "plain_language": {
+        "question": "幅210のすべての整数区間には差4の隣接素数ペアが4個以上存在するという条件を調べました。",
+        "background": "素数は1と自分自身以外では割り切れない2以上の整数です。",
+        "method": "2800以下の対象を計算しました。",
+        "finding": "500で観測値3が条件に反しました。",
+        "limits": "AIの説明と検証条件が一致するかは未確認です。計算は証明ではありません。 過去の完全一致はありませんが、学術的新規性は確認していません。",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。"
+      },
+      "research_progression": {
+        "previous_run_id": "AI-20261120-08",
+        "previous_result": "有限範囲で反例発見",
+        "next_question": "この予想は既知の定理でしょうか。理由を説明できるでしょうか。",
+        "selection_reason": "前回の「幅240のすべての整数区間には差4の隣接素数ペアが5個以上存在する」は「有限範囲で反例発見」でした。今回は同じ種類の条件について、limit・window・thresholdを変えて再検証します。これは条件の比較であり、AIの内部思考を再現したものではありません。",
+        "link_type": "same_kind_comparison",
+        "note": "関連する先行実験との比較。因果関係やAIの内部推論を証明するものではありません。"
+      },
+      "research_basis": {
+        "sources": [
+          {
+            "title": "有界素数間隔",
+            "url": "https://arxiv.org/abs/1305.6284",
+            "topic": "素数間隔",
+            "relationship": "実験テーマに関連する既存研究の参考資料（自動割当）"
+          }
+        ],
+        "selection_basis": "検証の種類「cousin_prime_count_window」に基づき参考資料を自動選択。仮説提案の動機（未検証）：重力レンズ効果による複数像の観測にならい、差が4であるいとこ素数ペアが特定サイズの窓内で一定数以上観測されるか検証する",
         "citation_status": "関連資料の候補・本文との対応および新規性は未確認",
         "model_used_source": "不明"
       },
